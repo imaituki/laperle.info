@@ -58,9 +58,6 @@ if( !empty($_ARR_FILE) ){
 	$smarty->assign( '_ARR_FILE', $_ARR_FILE );
 }
 
-// オプション設定
-$smarty->assign( 'OptionInformationCategory' , $OptionInformationCategory  );
-
 
 // 表示
 $smarty->display("list.tpl");

@@ -51,9 +51,6 @@ if( !empty($_POST[_CONTENTS_ID]) ) {
 		$smarty->assign( '_ARR_FILE', $_ARR_FILE );
 	}
 
-	// オプション設定
-	$smarty->assign( 'OptionInformationCategory' , $OptionInformationCategory  );
-
 
 	// 表示
 	$smarty->display( "edit.tpl" );

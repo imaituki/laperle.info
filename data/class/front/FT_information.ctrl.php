@@ -129,20 +129,6 @@ class FT_information {
 			}
 		}
 
-		if( is_array( $res["data"] ) ) {
-			foreach( $res["data"] as $key => $val ) {
-				if( !empty( $res["data"][$key]["id_category"] ) ) {
-					$res["data"][$key]["id_category"] = explode( ",", $res["data"][$key]["id_category"] );
-				}
-			}
-		} elseif( is_array( $res ) ) {
-			foreach( $res as $key => $val ) {
-				if( !empty( $res[$key]["id_category"] ) ) {
-					$res[$key]["id_category"] = explode( ",", $res[$key]["id_category"] );
-				}
-			}
-		}
-
 		// 戻り値
 		return $res;
 
@@ -177,10 +163,6 @@ class FT_information {
 		if( !empty($res["comment"]) ){
 			$res["comment"] = html_entity_decode( $res["comment"] );
 		}
-
-		if( !empty( $res["id_category"] ) ){
-					$res["id_category"] = explode( ",", $res["id_category"] );
-				}
 
 		// 戻り値
 		return $res;
@@ -225,36 +207,6 @@ class FT_information {
 			$res["now"]  = $aryId[$pageKey];
 			$res["next"] = $aryId[$pageKey-1];
 
-		}
-
-		// 戻り値
-		return $res;
-
-	}
-
-
-	//-------------------------------------------------------
-	// 関数名: GetOption
-	// 引  数: なし
-	// 戻り値: お知らせカテゴリーオプション
-	// 内  容: お知らせカテゴリーをオプション化して取得
-	//-------------------------------------------------------
-	function GetOption() {
-
-		// SQL配列
-		$creation_kit = array(  "select" => "id_category, title",
-								"from"   => "mst_info_category",
-								"where"  => "delete_flg = 0 ",
-								"order"  => "display_num ASC"
-							);
-		// データ取得
-		$arr_option = $this->_DBconn->selectCtrl( $creation_kit, array("fetch" => _DB_FETCH_ALL) );
-
-		// オプション用に成形
-		if( !empty($arr_option) ){
-			foreach( $arr_option as $val ){
-				$res[$val["id_category"]] = $val["title"];
-			}
 		}
 
 		// 戻り値

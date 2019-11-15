@@ -4,7 +4,6 @@
 		<tr>
 			<th>日付</th>
 			<th>掲載期間</th>
-			<th>カテゴリ</th>
 			<th>タイトル</th>
 			<th class="photo">写真</th>
 			<th class="showhide">表示</th>
@@ -15,7 +14,6 @@
 		<tr>
 			<th width="100">日付</th>
 			<th width="100">掲載期間</th>
-			<th>カテゴリ</th>
 			<th>タイトル</th>
 			<th class="photo" width="220">写真</th>
 			<th class="showhide" width="60">表示</th>
@@ -33,9 +31,6 @@
 				{else}
 					無期限
 				{/if}
-			</td>
-			<td>
-				{$OptionInformationCategory[$information.information_category]}
 			</td>
 			<td><a href="./edit.php?id={$information.$_CONTENTS_ID}">{$information.title}</a></td>
 			<td class="pos_al">

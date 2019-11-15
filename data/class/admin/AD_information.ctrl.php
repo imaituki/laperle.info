@@ -125,7 +125,6 @@ class AD_information {
 
 		// チェックエントリー
 		$objInputCheck->entryData( "日付", "date" , $arrVal["date"] , array( "CHECK_EMPTY", "CHECK_DATE" ), null, null );
-		$objInputCheck->entryData( "カテゴリー", "information_category", $arrVal["information_category"][0], array( "CHECK_EMPTY_ZERO", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "タイトル", "title", $arrVal["title"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		if( $arrVal["display_indefinite"] == 0 ) {
 			$objInputCheck->entryData( "掲載開始", "display_start", $arrVal["display_start"], array( "CHECK_DATE" ), null, null );
@@ -197,9 +196,6 @@ class AD_information {
 		$arrVal = $this->_DBconn->arrayKeyMatchFecth( $arrVal, "/^[^\_]/" );
 		$arrVal["entry_date"]  = date( "Y-m-d H:i:s" );
 		$arrVal["update_date"] = date( "Y-m-d H:i:s" );
-		if( !empty( $arrVal["information_category"] ) && is_array( $arrVal["information_category"] ) ){
-			$arrVal["information_category"] = implode( ",", $arrVal["information_category"] );
-		}
 
 		// 登録
 		$res = $this->_DBconn->insert( $this->_CtrTable, $arrVal, $arrSql );
@@ -233,9 +229,6 @@ class AD_information {
 		// 登録データの作成
 		$arrVal = $this->_DBconn->arrayKeyMatchFecth( $arrVal, "/^[^\_]/" );
 		$arrVal["update_date"] = date( "Y-m-d H:i:s" );
-		if( !empty( $arrVal["information_category"] ) && is_array( $arrVal["information_category"] ) ){
-			$arrVal["information_category"] = implode( ",", $arrVal["information_category"] );
-		}
 
 		// 更新条件
 		$where = $this->_CtrTablePk . " = " . $arrVal["id_information"];
@@ -404,44 +397,11 @@ class AD_information {
 
 		// データ取得
 		$res = $this->_DBconn->selectCtrl( $creation_kit, array( "fetch" => _DB_FETCH ) );
-		if( !empty( $res["information_category"] ) ){
-					$res["information_category"] = explode( ",", $res["information_category"] );
-				}
 
 		// 戻り値
 		return $res;
 
 	}
 
-/*
-	//-------------------------------------------------------
-	// 関数名: GetOption
-	// 引  数: なし
-	// 戻り値: お知らせカテゴリーオプション
-	// 内  容: お知らせカテゴリーをオプション化して取得
-	//-------------------------------------------------------
-	function GetOption() {
-
-		// SQL配列
-		$creation_kit = array(  "select" => "information_category, title",
-								"from"   => "t_information_category",
-								"where"  => "delete_flg = 0 AND display_flg = 1",
-								"order"  => "display_num ASC"
-							);
-		// データ取得
-		$arr_option = $this->_DBconn->selectCtrl( $creation_kit, array("fetch" => _DB_FETCH_ALL) );
-
-		// オプション用に成形
-		if( !empty($arr_option) ){
-			foreach( $arr_option as $val ){
-				$res[$val["information_category"]] = $val["title"];
-			}
-		}
-
-		// 戻り値
-		return $res;
-
-	}
-*/
 }
 ?>
