@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*
+	Last Update:2019/11/18
+	Auther: iw
+*/
+/*===================================================================
+	layout
+===================================================================*/
+html { background:#fff; }
+body { position:relative; text-align:center; overflow-x:hidden; }
+#base, #body { position:relative; }
+
+.wrapper, .wrapper-t, .wrapper-b { position:relative; }
+	@media (max-width: 767px){
+		.wrapper, .wrapper-t { padding-top:70px; }
+		.wrapper, .wrapper-b { padding-bottom:70px; }
+	}
+	@media (min-width: 768px){
+		.wrapper, .wrapper-t { padding-top:100px; }
+		.wrapper, .wrapper-b { padding-bottom:100px; }
+	}
+
+.center, .center2,
+.center3, .center4 { margin:0 auto; text-align:left; }
+.center { max-width:1350px; }
+.center2 { max-width:850px; }
+.center3 { max-width:1000px; }
+.center4 { max-width:600px; }
+	@media (max-width:1380px){
+		.center { padding-left:15px; padding-right:15px; }
+	}
+	@media (max-width: 880px){
+		.center2 { padding-left:15px; padding-right:15px; }
+	}
+	@media (max-width:1030px){
+		.center3 { padding-left:15px; padding-right:15px; }
+	}
+	@media (max-width: 630px){
+		.center4 { padding-left:15px; padding-right:15px; }
+	}
+
+
+/*===================================================================
+	#head
+===================================================================*/
+#head { position:absolute;  width:100%; z-index:990; text-align:left;  }
+#head a { text-decoration:none; }
+#head .head_wrap { position:relative; display:table; width:100%; max-width:1440px; margin:0 auto; }
+#head .head_wrap > * { display:table-cell; vertical-align:middle; }
+#head .site_logo { padding:10px 15px; }
+#head .site_logo a { display:block; }
+	@media (max-width: 767px){
+		#head #btn_open { position:fixed; right: 10px; top: 10px; }
+		#head .site_logo a { max-width:220px; }
+		#menu_cover { background:rgba(255,255,255,0.9); position:absolute; top:0; left:0; z-index:900; width:100vw; height:100%; overflow:hidden; }
+	}
+	@media (min-width: 768px){
+		#head .site_logo { width:calc(100% - 750px); max-width:280px; }
+	}
+
+#head_navi {}
+#head_navi .main > ul > li > a { color:#000000; }
+#head_navi .menu > a:after { content:"\f107"; margin-left:5px; }
+	@media (max-width: 767px){
+		#base:not(.open) #head #head_navi { display:none; }
+		#base.open #head #head_navi { display:block; position:absolute; top:65px; left:0; z-index:9767; width:100%; background:rgba(255,255,255,0.9); }
+		#head #head_contact{display: none;}
+
+		#head_navi .menu > a { position:relative; }
+		#head_navi .menu > a:after { position:absolute; right:10px; top:15px; }
+		#head_navi .main > ul { border-top:3px dotted #CCC; }
+		#head_navi .main > ul > li { border-bottom:3px dotted #CCC; }
+		#head_navi .main li a {display:block; padding:10px 20px; }
+		body.pc #head_navi .main > ul > li > a:hover { background:#e5f2f9; }
+	}
+	@media (min-width: 768px){
+		#head_navi .main > ul { display:flex; width:100%; }
+		#head_navi .main > ul > li { display:inline-block; text-align:center; line-height:100%; }
+		#head_navi .main > ul > li.sp { display:none; }
+		body.pc #head_navi .main > ul > li a:hover { text-decoration:underline; }
+	}
+	@media (min-width: 768px) and (max-width:1199px){
+		#head_navi .main { padding:20px 10px 20px 0; }
+		#head_navi .main > ul > li > a { font-size:13px; }
+	}
+
+
+#btn_open {}
+	@media (max-width: 767px){
+		#btn_open { width:60px; text-align:right; padding-right:15px; }
+		#btn_open a { display:block; font-size:36px; line-height:1px; }
+	}
+	@media (min-width: 768px){
+		#btn_open { display:none !important; }
+	}
+
+/*===================================================================
+	#foot
+===================================================================*/
+#foot { position:relative; color:#6A4428; }
+#foot a { color:#6A4428; text-decoration:none; }
+#foot .foot_wrap { font-size:0.9em; text-align:center; }
+#foot .foot_navi ul { text-align:center; }
+#foot .foot_navi li { display:inline-block; line-height:100%; padding:0 15px; border-right:1px solid #6A4428; }
+#foot .foot_navi ul > li:last-child { border:none; }
+#copyright { font-size:13px; text-align:center; color:#6A4428; padding:10px 0 0; }
+
+#pagetop { position:fixed; bottom:0; right:0; z-index:9000;  line-height:100%; }
+#pagetop a { color:#fff; text-decoration:none; display:block; padding:20px 25px; background:#88c0e4; }
+#pagetop a span { display:inline-block; border-top:2px solid #fff; padding:5px 0 0; }
+body.pc #pagetop a:hover { opacity:0.8; }
+	@media (max-width: 575px){
+		#foot { padding:30px 15px 70px; }
+		#foot h5 img { max-width:170px; }
+		#pagetop { font-size:20px; }
+	}
+	@media (min-width: 576px){
+		#foot { padding:30px 15px; }
+		#foot h5 img { max-width:250px; }
+		#pagetop { font-size:40px; }
+	}
+
+
+/*===================================================================
+	#common
+===================================================================*/
+/* title */
+#page_title { position:relative; }
+#page_title .page_title_wrap { position:absolute; top:0; left:0; width:100%; height:100%; text-align:center; background:url(../image/contents/bg_town.png) repeat-x bottom center; }
+#page_title .center { display:table; width:100%; height:100%; }
+#page_title h2 { display:table-cell; text-align:center; vertical-align:middle; font-weight:bold; color:#fff; text-shadow:0 0 5px #666; }
+	@media (max-width: 767px){
+		#page_title h2 { font-size:2em; }
+		#page_title .img_back {
+		    min-height: 150px;
+		}
+	}
+	@media (min-width: 768px){
+		#page_title h2 { font-size:2.25em; }
+		#page_title .img_back {
+		    min-height: 180px;
+		}
+	}
+
+/* pankuzu */
+#pankuzu { text-align:left; font-size:13px; color:#04326a; padding:10px 0; }
+#pankuzu a { color:#04326a; }
+#pankuzu li { display:inline-block; }
+#pankuzu li:before { content:"\f054"; font-family:"Font Awesome 5 Free"; -webkit-font-smoothing:antialiased; text-rendering:auto; font-variant:normal; font-weight:bold; font-size:0.85em; line-height:200%; padding:0 10px; color:#04326a; }
+#pankuzu ul > li:first-child:before { content:""; }
+	@media (max-width: 767px){
+		#pankuzu { display:none; }
+	}
