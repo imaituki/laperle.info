@@ -8,7 +8,7 @@
 ===================================================================*/
 html { background:#fff; }
 body { position:relative; text-align:center; overflow-x:hidden; }
-#base, #body { position:relative; }
+#base, #body { position:relative; color: #6A4428;}
 
 .wrapper, .wrapper-t, .wrapper-b { position:relative; }
 	@media (max-width: 767px){
@@ -78,12 +78,8 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 		#head_navi .main > ul > li { display:inline-block; text-align:center; line-height:100%; }
 		#head_navi .main > ul > li.sp { display:none; }
 		body.pc #head_navi .main > ul > li a:hover { text-decoration:underline; }
+		#head #head_contact a {    background: #CB4E4E; color: #FFF; padding: 15px 30px; border-radius: 10px;}
 	}
-	@media (min-width: 768px) and (max-width:1199px){
-		#head_navi .main { padding:20px 10px 20px 0; }
-		#head_navi .main > ul > li > a { font-size:13px; }
-	}
-
 
 #btn_open {}
 	@media (max-width: 767px){
@@ -97,7 +93,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 /*===================================================================
 	#foot
 ===================================================================*/
-#foot { position:relative; color:#6A4428; }
+#foot { position:relative; color:#6A4428; background:url(../image/foot/back.jpg) repeat center top / cover; }
 #foot a { color:#6A4428; text-decoration:none; }
 #foot .foot_wrap { font-size:0.9em; text-align:center; }
 #foot .foot_navi ul { text-align:center; }
@@ -131,15 +127,11 @@ body.pc #pagetop a:hover { opacity:0.8; }
 #page_title h2 { display:table-cell; text-align:center; vertical-align:middle; font-weight:bold; color:#fff; text-shadow:0 0 5px #666; }
 	@media (max-width: 767px){
 		#page_title h2 { font-size:2em; }
-		#page_title .img_back {
-		    min-height: 150px;
-		}
+		#page_title .img_back { min-height: 150px;}
 	}
 	@media (min-width: 768px){
 		#page_title h2 { font-size:2.25em; }
-		#page_title .img_back {
-		    min-height: 180px;
-		}
+		#page_title .img_back {min-height: 180px;}
 	}
 
 /* pankuzu */

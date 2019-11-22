@@ -47,13 +47,14 @@
 /*===================================================================
 	#contact
 ===================================================================*/
-#contact {}
+#contact { z-index: 991;}
+#contact .bt_0 { z-index: 990;}
 .tbl_form { width:100%; border-collapse:separate; border-spacing:0 30px; }
 .tbl_form tbody th,
 .tbl_form tbody td { vertical-align:middle; }
-.tbl_form tbody th { font-weight:bold; border-left:5px solid #E2E9F0; position:relative; color:#6D6D6D; background:#F7F9FB; }
-.tbl_form tbody th .need { position: absolute; right:10px; }
-#contact .flex{display: flex; vertical-align: middle; align-items: center;}
+.tbl_form tbody th {}
+
+
 	@media (max-width: 575px){
 		.tbl_form,
 		.tbl_form tbody,
@@ -163,6 +164,11 @@ body.pc .button._more:hover { background:#fff; color:#6A4428; }
 /*===================================================================
 	color
 ===================================================================*/
+.bg_clear{background: rgba(255,255,255,0.9);}
+.bg_0{background:url(../image/contents/top/back_0.jpg) repeat center top / cover;}
+.bg_1{background:url(../image/contents/top/back_1.jpg) repeat center top / cover;}
+.bg_2{background:url(../image/contents/top/back_2.jpg) no-repeat center top / cover; }
+.bg_3{background:url(../image/contents/top/back_3.jpg) repeat center top / cover; }
 
 .c_red { color:#CB4E4E !important; }
 .c_blue { color:#005DA4 !important; }
@@ -181,6 +187,9 @@ body.pc .button._more:hover { background:#fff; color:#6A4428; }
 .mb40 { margin-bottom:40px !important; }
 .mb50 { margin-bottom:50px !important; }
 .mb100 { margin-bottom:100px !important; }
+
+.bt_0{bottom: 0;}
+.tp_0{top: 0;}
 
 .pos_re{position: relative;}
 .pos_ab{position: absolute;}
