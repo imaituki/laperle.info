@@ -79,9 +79,11 @@ class FT_contact {
 		// チェックエントリー
 		$objInputCheck->entryData( "お名前", "name", $arrVal["name"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "フリガナ", "ruby", $arrVal["ruby"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_KANA" ), 0, 255 );
+		$objInputCheck->entryData( "年齢", "age", $arrVal["age"], array( "CHECK_EMPTY_ZERO"), null, null );
+		$objInputCheck->entryData( "性別", "sex", $arrVal["sex"], array( "CHECK_EMPTY_ZERO"), null, null );
+		$objInputCheck->entryData( "紹介者", "introducer", $arrVal["introducer"], array( "CHECK_EMPTY"), 0, 255 );
 		$objInputCheck->entryData( "メールアドレス", "mail", $arrVal["mail"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_MAIL" ), 0, 255 );
 		$objInputCheck->entryData( "電話番号", "tel", $arrVal["tel"], array( "CHECK_EMPTY", "CHECK_TEL" ), null, null );
-		$objInputCheck->entryData( "お問い合わせ内容", "comment", $arrVal["comment"], array( "CHECK_EMPTY" ), null, null );
 
 		// チェック実行
 		$res["ng"] = $objInputCheck->execCheckAll();

@@ -10,6 +10,20 @@
 //----------------------------------------
 require "./config.ini";
 
+//----------------------------------------
+//  データ取得
+//----------------------------------------
+// 操作クラス
+$objManage      = new DB_manage( _DNS );
+$objInformation = new FT_information( $objManage );
+
+// お知らせ
+$t_information  = $objInformation->GetSearchList( null, array("fetch" => _DB_FETCH_ALL), 4 );
+
+// クラス削除
+unset( $objInformation   );
+unset( $objManage        );
+
 
 
 //----------------------------------------
@@ -19,7 +33,11 @@ $smarty = new MySmarty("front");
 $smarty->compile_dir .= "";
 
 // テンプレートに設定
-$smarty->assign( "t_information"       , $t_information        );
+$smarty->assign( "t_information" , $t_information );
+
+// オプション設定
+$smarty->assign( "OptionAge"     , $OptionAge     );
+$smarty->assign( "OptionSex"     , $OptionSex     );
 
 // 表示
 $smarty->display("index.tpl");

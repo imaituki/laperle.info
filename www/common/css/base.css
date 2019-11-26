@@ -50,7 +50,7 @@ video, iframe { border:none; margin:0; max-width:100%; }
 
 a, button, input[type="submit"], input[type="button"] { cursor:pointer; }
 a:link { text-decoration:underline; color:#1c4373; }
-a:visited { text-decoration:underline; color:#1a4275; }
+a:visited { text-decoration:underline; color:#6A4428; }
 a:hover { text-decoration:none; }
 a:active { text-decoration:none; }
 body.pc .ov { transition: .2s; cursor:pointer; }
@@ -59,11 +59,11 @@ body.pc .ov:hover { opacity:0.75; }
 /* form */
 input[type="text"], input[type="email"], input[type="tel"], textarea, select { font-size:1em;  border: 3px solid #EEF3F7; }
 /*input[type="text"], input[type="email"], input[type="tel"], textarea, select { font-size:1em; border:1px solid #fff; background:#fafafa; border-radius:3px; margin:3px 0; }*/
-input[type="text"], input[type="email"], input[type="tel"], textarea {width: 100%; padding: 15px 10px;
+input[type="text"], input[type="email"], input[type="tel"], textarea ,select{width: 100%; padding: 15px 10px;
     border: 1px solid #FFF;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1); }
-select { padding:15px 8px; }
+select { width: 150px; font-size: 13px;}
 input[type=checkbox], input[type=radio] { -webkit-transform: scale(1.1,1.1); margin-right:5px; }
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus { background:#fefefc; }
 	@media screen and (max-width:767px){
@@ -104,17 +104,14 @@ input.w150 { width:150px; }
 .fw_bold { font-weight:bold !important; }
 .fw_nomal { font-weight:normal !important; }
 
-.c_red { color:#b50610; }
-.c_blue { color:#04326a; }
-.c_gray { color:#999; }
 
 .list_pager { margin-bottom:20px; }
 .list_pager ul { text-align:center; }
 .list_pager ul li { display:inline; }
 .list_pager ul li strong,
-.list_pager ul li a { display:inline-block; padding:10px 12px 9px; border:1px solid #80a3b9; color:#80a3b9; text-decoration:none; line-height:100%; }
+.list_pager ul li a { display:inline-block; padding:10px 12px 9px; border:1px solid #B8A08D; color:#6A4428;; text-decoration:none; line-height:100%; }
 .list_pager ul li strong,
-.list_pager ul li a:hover { background:#88c0e4; color:#FFF; border:1px solid #88c0e4; }
+.list_pager ul li a:hover { background:#B8A08D; color:#FFF; border:1px solid #B8A08D; }
 
 /* form */
 .error { display:block; margin:5px 0; padding:5px; background:#F8EAE8; color:#b50610; font-weight:normal; }

@@ -10,7 +10,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="hr-line-dashed"></div>>
+		<div class="hr-line-dashed"></div>
 		<div class="form-group required">
 			<label class="col-sm-2 control-label">タイトル</label>
 			<div class="col-sm-6">
