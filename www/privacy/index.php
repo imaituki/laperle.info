@@ -11,25 +11,12 @@
 require "./config.ini";
 
 //----------------------------------------
-//  ヘッダー情報
-//----------------------------------------
-// タイトル
-$_HTML_HEADER["title"] = "ご予約";
-
-// キーワード
-$_HTML_HEADER["keyword"] = "";
-
-// ディスクリプション
-$_HTML_HEADER["description"] = "";
-
-//----------------------------------------
 //  smarty設定
 //----------------------------------------
 $smarty = new MySmarty("front");
-$smarty->compile_dir .= "";
+$smarty->compile_dir .= "privacy/";
 
 // 表示
-$smarty->display("finish.tpl");
-
+$smarty->display("index.tpl");
 
 ?>

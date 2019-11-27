@@ -24,8 +24,6 @@ $t_information  = $objInformation->GetSearchList( null, array("fetch" => _DB_FET
 unset( $objInformation   );
 unset( $objManage        );
 
-
-
 //----------------------------------------
 //  smarty設定
 //----------------------------------------

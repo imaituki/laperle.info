@@ -95,7 +95,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 		#head_navi .menu > a:after { position:absolute; right:10px; top:15px; }
 		#head_navi .main > ul > li { border-bottom: 2px dotted #CB4E4E; }
 		#head_navi .main li a {display:block; padding:10px 20px; }
-		body.pc #head_navi .main > ul > li > a:hover { background:#e5f2f9; }
+		body.pc #head_navi .main > ul > li > a:hover { background:#FFFFEB; }
 	}
 	@media (min-width:992px){
 		#head_navi .main li.sp_menu{display: none;}

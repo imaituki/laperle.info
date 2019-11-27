@@ -75,7 +75,7 @@
 							<div class="pd">
 								<p>フェイシャルレメディ&reg;協会</p>
 								<p class="post">認定エステティシャン</p>
-								<p class="name">松井志保里</p>
+								<p class="name">{$mst_siteconf.representative}</p>
 							</div>
 						</div>
 					</div>
@@ -165,7 +165,7 @@
 						<div class="info_unit bg_clear">
 							<a href="/information/detail.php?id={$information.id_information}">
 								<div class="photo">
-									<div class="img_sq"><img src="{if $information.image1}/common/photo/information/image1/l_{$information.image1}{else}/common/image/contents/null.jpg{/if}"></div>
+									<div class="img_sq"><img src="{if $information.image1}/common/photo/information/image1/l_{$information.image1}{else}/common/image/contents/null_s.jpg{/if}"></div>
 								</div>
 								<div class="text">
 									<p class="mb5">{$information.date|date_format:"%Y/%m/%d"}</p>
@@ -234,13 +234,13 @@
 								</div>
 							</div>
 							<div class="col-xs-7 height-1 pos_ar mincho">
-								<p class="time">AM10：00～PM7：00</p>
+								<p class="time">{$mst_siteconf.worktime}</p>
 								<p>（最終受付）</p>
 							</div>
 						</div>
 						<h4 class="mincho">場所</h4>
 						<div class="indent">
-							<p>岡山市中区中島</p>
+							<p>{$mst_siteconf.address}</p>
 							<p>※プライベートサロンのため、ご予約時に詳しい場所のご案内をさせて頂きます。</p>
 						</div>
 					</div>
@@ -331,20 +331,20 @@
 			<div class="center3">
 				<div class="row mb50">
 					<div class="col-xs-6 col-xs-push-6 height-1 flex">
-						<h2 class="mincho"><span class="en">Contact</span>～ご予約・お問い合わせ～</h2>
+						<h2 class="mincho"><span class="en">Contact</span>～ご予約について～</h2>
 					</div>
 					<div class="col-xs-6 col-xs-pull-6 height-1 flex">
-						<div class="photo_l bor10"><img src="/common/image/contents/top/image6.jpg" alt="～ご予約・お問い合わせ～"></div>
+						<div class="photo_l bor10"><img src="/common/image/contents/top/image6.jpg" alt="ご予約について"></div>
 					</div>
 				</div>
 				<div class="center4 mb50">
 					<div class="contact_box pos_ac bg_clear">
-						<p class="tel c_red mincho fw_bold"><i class="fas fa-phone-alt"></i>050-5373-6334</p>
-						<p class="mail c_red mincho mb10"><i class="fa fa-envelope"></i>facialremedy_laperle@yahoo.co.jp</p>
-						<p>Instagram（アカウント：shiori4799）のDMからもご予約、<br>お問い合わせを受け付けております。 </p>
+						<p class="tel c_red mincho fw_bold" data-tel="{$mst_siteconf.tel}"><i class="fas fa-phone-alt"></i>{$mst_siteconf.tel}</p>
+						<p class="mail  c_red mincho mb10"><i class="fa fa-envelope"></i><a href="mailto:{$mst_siteconf.mail}" class="c_red">{$mst_siteconf.mail}</a></p>
+						<p class="instagram"><a href="https://www.instagram.com/shiori4799/" target="_blank">Instagram（アカウント：shiori4799）</a>のDMからもご予約、<br>お問い合わせを受け付けております。 </p>
 					</div>
 				</div>
-				<h4 id="form" class="mincho mb50 pos_al">ご予約・お問い合わせフォーム</h4>
+				<h4 id="form" class="mincho mb50 pos_al">ご予約フォーム</h4>
 				<form action="./check.php#form" method="post">
 					<div class="bg_clear">
 						<div class="center2">

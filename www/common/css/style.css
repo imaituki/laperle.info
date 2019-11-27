@@ -119,7 +119,7 @@
 		#top #information .info_unit .photo { width:40%; }
 	}
 	@media (min-width: 768px){
-		#top #information .info_unit .photo { width:150px; }
+		#top #information .info_unit .photo { width:180px; }
 		#top #information .info_unit .text { padding:30px; }
 	}
 
@@ -177,6 +177,8 @@
 #top #contact .contact_box {     border: 3px solid #E6DAB5; border-radius: 10px; padding: 30px;}
 #top #contact .contact_box i{margin-right: 5px;}
 #top #contact .contact_box .tel{font-size: 2em;}
+#top #contact .mail a{ text-decoration: unset!important;}
+#top #contact .instagram a{ color: #6A4428!important; text-decoration: unset!important;}
 
 .tbl_form { width:100%; border-collapse:separate; border-spacing:0 30px; }
 .tbl_form tbody th,
@@ -208,18 +210,36 @@
 #contact_finish .finish{z-index:10; }
 
 /*===================================================================
-	#information
+	#information_list
 ===================================================================*/
-#information .img_rect{border-top-left-radius: 10px; border-top-right-radius: 10px;}
-#information .bg_clear{border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding: 25px;}
-#information .bg_clear p{color:#6A4428;}
-#information .information{position: relative; z-index: 10;}
-#information .information .col-xs-6{margin-bottom: 50px;}
+#information_list .img_rect{border-top-left-radius: 10px; border-top-right-radius: 10px;}
+#information_list .bg_clear{border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;  padding: 25px;}
+#information_list .bg_clear p{color:#6A4428;}
+#information_list .information{position: relative; z-index: 10;}
+
 
 /*===================================================================
 	#information_detail
 ===================================================================*/
 #information_detail .information {position: relative; z-index: 10;}
+#information_detail .button._more{position: relative; z-index: 10;}
+#information_detail .button._more{position: relative; z-index: 10;}
+#information_detail .information img, #information_detail .information .img_rect{border-radius: 20px;}
+
+@media (max-width: 767px){
+	#information_detail .information h2{margin-bottom: 5px;}
+}
+
+/*===================================================================
+	#privacy
+===================================================================*/
+#privacy .privacy {position: relative; z-index: 10;}
+#privacy .privacy p{padding: 0 30px;}
+#privacy .privacy ul{ padding: 0 40px; }
+#privacy .privacy ul li{padding-left:1em; text-indent:-1em;}
+#privacy .privacy p.tel{font-size: 25px;}
+#privacy .privacy p i{margin-right: 5px;}
+#privacy .mail a,#privacy .instagram a{  color: #6A4428!important; text-decoration: unset!important;}
 
 /*===================================================================
 	#entry
@@ -326,6 +346,7 @@ body.pc .form_button .button:hover { background:#fff; color:#CB4E4E; text-shadow
 .mb30 { margin-bottom:30px !important; }
 .mb40 { margin-bottom:40px !important; }
 .mb50 { margin-bottom:50px !important; }
+.mb70 { margin-bottom:70px !important; }
 .mb100 { margin-bottom:100px !important; }
 .mt-50{margin-top: -50px;}
 .mt100{margin-top: 100px;}

@@ -5,6 +5,7 @@
 {include file=$template_meta}
 <link rel="stylesheet" href="/common/css/import.css">
 {include file=$template_javascript}
+<script type="text/javascript" src="/common/js/lightbox/import.js"></script>
 </head>
 <body id="information_detail">
 <div id="base">
@@ -31,28 +32,37 @@
 		</div>
 		<div class="wrapper pos_re">
 			<div class="center3 information">
-				{if $t_information.image2 || $t_information.image3 || $t_information.image4 }
-					<div class="row">
-						{if $t_information.image2}
-						<div class="col-xs-4 height-1 mb20">
-							<a class="ov" href="/common/photo/information/image2/l_{$t_information.image2}" rel="lightbox">
-								<div class="img_rect"><img src="/common/photo/information/image2/m_{$t_information.image2}" alt="{$t_information.title}"></div></a>
+				<h2 class="mincho pos_ac">{$t_information.title}</h2>
+				<div class="mb50 mincho pos_ac">{$t_information.date|date_format:"%Y/%m/%d"}</div>
+				{if $t_information.image1}
+				<div class="center2">
+					<div class="pos_ac mb20"><img src="{$_RENEWAL_DIR}/common/photo/information/image1/l_{$t_information.image1}" alt="{$t_information.title}"></div>
+					{/if}
+					{if $t_information.image2 || $t_information.image3 || $t_information.image4 }
+						<div class="row mb30">
+							{if $t_information.image2}
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image2/l_{$t_information.image2}" rel="lightbox">
+									<div class="img_rect"><img src="/common/photo/information/image2/m_{$t_information.image2}" alt="{$t_information.title}"></div></a>
+							</div>
+							{/if}
+							{if $t_information.image3}
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image3/l_{$t_information.image3}" rel="lightbox">
+									<div class="img_rect"><img src="/common/photo/information/image3/m_{$t_information.image3}" alt="{$t_information.title}"></div></a>
+							</div>
+							{/if}
+							{if $t_information.image4}
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image4/l_{$t_information.image4}" rel="lightbox">
+									<div class="img_rect"><img src="{$_RENEWAL_DIR}/common/photo/information/image4/m_{$t_information.image4}" alt="{$t_information.title}"></div></a>
+							</div>
+							{/if}
 						</div>
-						{/if}
-						{if $t_information.image3}
-						<div class="col-xs-4 height-1 mb20">
-							<a class="ov" href="/common/photo/information/image3/l_{$t_information.image3}" rel="lightbox">
-								<div class="img_rect"><img src="/common/photo/information/image3/m_{$t_information.image3}" alt="{$t_information.title}"></div></a>
-						</div>
-						{/if}
-						{if $t_information.image4}
-						<div class="col-xs-4 height-1 mb20">
-							<a class="ov" href="/common/photo/information/image4/l_{$t_information.image4}" rel="lightbox">
-								<div class="img_rect"><img src="{$_RENEWAL_DIR}/common/photo/information/image4/m_{$t_information.image4}" alt="{$t_information.title}"></div></a>
-						</div>
-						{/if}
-					</div>
-				{/if}
+					{/if}
+				</div>
+				<div class="mb50">{$t_information.comment}</div>
+				<div class="pos_ac"><a href="/information/{if $arr_get.page != NULL}?page={$arr_get.page}{/if}" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
 		</div>
 		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="private salon ~la perle~"></div>

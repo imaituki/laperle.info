@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/common/css/import.css">
 {include file=$template_javascript}
 </head>
-<body id="information">
+<body id="information_list">
 <div id="base">
 {include file=$template_header}
 <main>
@@ -31,10 +31,10 @@
 		</div>
 		<div class="wrapper pos_re">
 			<div class="center3 information">
-				<div class="row">
+				<div class="row mb50">
 					{foreach from=$t_information item="information" key="key" name="LoopInfomation"}
 					<a href="./detail.php?id={$information.id_information}{if $arr_get.page != NULL}&page={$arr_get.page}{/if}">
-						<div class="col-xs-6">
+						<div class="col-xs-6 mb30">
 							<div class="img_rect"><img src="{if $information.image1}{$_RENEWAL_DIR}/common/photo/information/image1/m_{$information.image1}{else}{$_RENEWAL_DIR}/common/image/contents/null.jpg{/if}" alt="{$information.title}"></div>
 							<div class="bg_clear">
 								<p>{$information.date|date_format:"%Y/%m/%d"}</p>

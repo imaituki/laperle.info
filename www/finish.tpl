@@ -12,10 +12,10 @@
 <main>
 <div id="body">
 	<div id="page_title">
-		<div class="img_back"><img src="/common/image/contents/title.jpg" alt="お問い合わせ"></div>
+		<div class="img_back"><img src="/common/image/contents/title.jpg" alt="ご予約"></div>
 		<div class="page_title_wrap">
 			<div class="center3 mincho cg">
-				<h2 class="mincho"><span class="en">Contact</span>～ご予約・お問い合わせ～</h2>
+				<h2 class="mincho"><span class="en">Contact</span>～ご予約～</h2>
 			</div>
 		</div>
 	</div>
@@ -25,13 +25,13 @@
 			<div id="pankuzu">
 				<ul>
 					<li><a href="/">HOME</a></li>
-					<li>ご予約・お問い合わせ</li>
+					<li>ご予約</li>
 				</ul>
 			</div>
 		</div>
 		<div class="wrapper pos_re finish">
 			<div class="center3">
-				<h4 class="mincho mb50 pos_al">ご予約・お問い合わせが完了しました</h4>
+				<h4 class="mincho mb50 pos_al">ご予約が完了しました</h4>
 				<div class="bg_clear">
 					<div class="center2">
 						<p class="mb20">ご入力いただいたメールアドレス{if !empty( $arr_post.mail )}({$arr_post.mail}){/if}宛に、確認メールをお送りしておりますのでご確認ください。</p>
