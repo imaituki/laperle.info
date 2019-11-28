@@ -17,9 +17,10 @@
 					<a href="/#contact" class="ov"><i class="fa fa-envelope"></i>ご予約についてはこちら</a>
 				</div>
 				<div class="sns_icon">
-					<a class="fb ov ga_link" href="###" target="_blank"><i class="fab fa-facebook-f"></i></a>
-					<a class="line ov ga_link" href="###" target="_blank"><i class="fab fa-line"></i></a>
+					<a class="fb ov ga_link" href="https://www.facebook.com/facialremedy.laperle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a class="line ov ga_link" href="https://line.me/R/ti/p/%40994etixo" target="_blank"><i class="fab fa-line"></i></a>
 					<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a class="ameblo ov ga_link" href="https://ameblo.jp/k2409081/" target="_blank"><i class="fas fa-pencil-alt"></i></a>
 					<a class="contact ov" href="/#contact"><i class="fa fa-envelope"></i></a>
 				</div>
 			</nav>

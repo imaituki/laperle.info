@@ -91,7 +91,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 	@media (max-width: 991px){
 		#base:not(.open) #head_navi { display:none !important; }
 		#base.open #head_navi { position:absolute; display:block !important; top:0; left:0; z-index:990; width:100%; background:rgba(255,255,255,0.9); }
-		
+
 		#head_navi .main li { border-bottom: 2px dotted #CB4E4E; }
 		#head_navi .main li a {display:block; padding:20px; }
 		body.pc #head_navi .main a:hover { background:#FFFFEB; }
@@ -110,6 +110,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 #head .sns_icon {}
 #head .sns_icon a { position:relative; display:inline-block; color:#fff; text-align:center; margin: 0 3px;
 						font-size: 25px; line-height:50px; width:50px; height:50px; border-radius:50%; overflow:hidden; }
+#head .sns_icon a.ameblo { background:#fe9019;; }
 #head .sns_icon a.instagram { background:#000; }
 #head .sns_icon a.fb { background:#3b5998; }
 #head .sns_icon a.line { background:#2bbf13; color:#2bbf13; }
@@ -120,7 +121,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 		#head .sns_icon { padding:0 0 30px; text-align:center; }
 	}
 	@media (min-width: 992px){
-		#head .sns_icon { position: absolute; right: 0; top:100%; padding:0 15px; }
+		#head .sns_icon { position: absolute; right: 0; top:100%; padding:0 30px; }
 		#head.fixed .sns_icon { position: fixed; right: 0; top:15vh; width:90px; }
 		#head.fixed .sns_icon a.contact { display:inline-block; }
 	}
