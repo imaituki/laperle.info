@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-12 19:05:45
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 12:32:04
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5295512925dca11da3eb9a1-72586417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1573553144,
+      1 => 1574825523,
       2 => 'file',
     ),
   ),
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'template_meta' => 0,
     'template_javascript' => 0,
     'template_header' => 0,
+    'mst_siteconf' => 0,
     'template_footer' => 0,
   ),
   'has_nocache_code' => false,
@@ -32,9 +33,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta charset="utf-8">
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_meta']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-<link rel="stylesheet" href="../common/css/import.css">
+<link rel="stylesheet" href="/common/css/import.css">
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_javascript']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
+<script type="text/javascript" src="/common/js/lightbox/import.js"></script>
 </head>
 <body id="privacy">
 <div id="base">
@@ -43,64 +45,64 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <main>
 <div id="body">
 	<div id="page_title">
-		<div class="img_back"><img src="/common/image/contents/privacy/top.jpg" alt="プライバシーポリシー"></div>
+		<div class="img_back"><img src="/common/image/contents/title.jpg" alt="プライバシーポリシー"></div>
 		<div class="page_title_wrap">
-			<div class="center">
-				<h2>プライバシーポリシー</h2>
+			<div class="center3 mincho cg">
+				<h2 class="mincho"><span class="en">Privacy Policy</span>～プライバシーポリシー～</h2>
 			</div>
 		</div>
 	</div>
-	<div id="pankuzu" class="bg_dot">
-		<div class="center">
-			<ul>
-				<li><a href="/">HOME</a></li>
-				<li>プライバシーポリシー</li>
-			</ul>
-		</div>
-	</div>
-	<section>
-		<div class="wrapper bg_lblueo">
-			<div class="center">
-				<div class="box">
-					<p class="mb30">R・Fマネージメント株式会社（以下当事務所）では、個人情報に関する法令およびその他の規範を遵守し、お客様の大切な個人情報の保護に万全を尽くします。</p>
-					<h3 class="hl_3">個人情報の収集について</h3>
-					<p class="mb10">当事務所では、次のような場合に必要な範囲で個人情報を収集することがあります。</p>
-					<div class="entry mb50">
-						<ul>
-							<li>当事務所へのお問い合わせ時</li>
-							<li>当事務所へのサービスお申し込み時</li>
-						</ul>
-					</div>
-					<h3 class="hl_3">個人情報の利用目的について</h3>
-					<p class="mb10">当事務所は、お客様から収集した個人情報を次の目的で利用いたします。</p>
-					<div class="entry mb50">
-						<ul>
-							<li>お客様への連絡のため</li>
-							<li>お客様からのお問い合せに対する回答のため</li>
-							<li>お客様へのサービス提供のため</li>
-						</ul>
-					</div>
-					<h3 class="hl_3">個人情報の第三者への提供について</h3>
-					<p class="mb10">当事務所では、お客様より取得した個人情報を第三者に開示または提供することはありません。<br>ただし、次の場合は除きます。</p>
-					<div class="entry mb50">
-						<ul>
-							<li>ご本人の同意がある場合</li>
-							<li>警察からの要請など、官公署からの要請の場合</li>
-							<li>法律の適用を受ける場合</li>
-							<li>人の生命、身体または財産の保護のために必要がある場合であって、ご本人の同意を得ることが困難な場合</li>
-							<li>衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、ご本人の同意を得ることが困難である場合</li>
-							<li>国の機関もしくは地方公共団体またはその委託を受けたものが法令を定める事務を遂行することに対して協力する必要があって、<br>ご本人の同意を得ることにより該当事務の遂行に支障を及ぼすおそれがあるとき</li>
-						</ul>
-					</div>
-					<h3 class="hl_3">個人情報の開示、訂正等について</h3>
-					<p class="mb10">当事務所は、お客様から収集した個人情報を次の目的で利用いたします。</p>
-					<h3 class="hl_3">個人情報保護に関するお問い合わせ先</h3>
-					<p>TEL：086-238-9886　FAX：086-238-9886<br>
-						e-mail：<a href="mailto:info@fp-rfm.com">info@fp-rfm.com</a><br>
-						R・Fマネージメント株式会社　代表　升田 良太郎</p>
-				</div>
+	<section class="bg_1 pos_re">
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="private salon ~la perle~"></div>
+		<div class="center3">
+			<div id="pankuzu">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li>プライバシーポリシー</li>
+				</ul>
 			</div>
 		</div>
+		<div class="wrapper pos_re">
+			<div class="center3 privacy">
+				<h2 class="mincho pos_ac mb50 fw_bold">個人情報の取り扱いについて</h2>
+				<p class="mb70">プライベートサロン ～ラ・ペルル～（以下当サロン）はお客様のプライバシーを尊重し、安心してお客様に当サロンのサービスを受けていただくために個人情報の保護に関する法律、法令を遵守し個人情報の保護につとめます。</p>
+				<h2 class="mincho pos_ac center mb30">個人情報の収集</h2>
+					<p class="mb30">当サロンは、以下の場合に必要な範囲だけで個人情報を収集いたします。</p>
+					<ul class="mb70">
+						<li>・当サロンへのお問い合わせ時</li>
+						<li>・当サロンへのサービス等のお申し込み時</li>
+					</ul>
+				<h2 class="mincho pos_ac center mb30">個人情報の利用目的</h2>
+					<p class="mb30">当サロンは、お客様から収集した個人情報を以下の目的で利用いたします。</p>
+					<ul class="mb70">
+						<li>・お客様へのご連絡のため</li>
+						<li>・お客様からのお問い合わせに対しての回答のため</li>
+						<li>・お客様へサービスを提供するため</li>
+					</ul>
+				<h2 class="mincho pos_ac center mb30">第三者へ個人情報の提供</h2>
+					<p class="mb30">当サロンでは、以下の場合を除きお客様の個人情報を第三者に開示あるいは提供することはありません。</p>
+					<ul class="mb70">
+						<li>・お客様から個人情報の開示についてあらかじめ同意を頂いている場合</li>
+						<li>・法令に基づいている場合</li>
+						<li>・人の生命・身体または財産の保護のために必要がある場合</li>
+						<li>・サロンに対してお客様に説明した利用目的の達成に必要な範囲内において個人情報の預託する場合</li>
+					</ul>
+				<h2 class="mincho pos_ac center mb30">個人情報の開示・訂正・利用の停止</h2>
+					<p class="mb70">お客様よりご提供いただいた個人情報の内容に関し開示、訂正、利用停止などを希望される場合はご本人であることを確認の上法令にしたがってすみやかに対応させていただきます。</p>
+				<h2 class="mincho pos_ac center mb30">プライバシーポリシーの改正について</h2>
+					<p class="mb70">当サロンではお客様の個人情報の取り扱いにあたって個人情報保護に関する法律・その他の法制順守とともに継続的な見直しを行いそれらの改善・改良に努めます。これに伴いプライバシーポリシーが予告なしに変更されることがあることをあらかじめご了承お願いいたします。</p>
+				<h2 class="mincho pos_ac center mb30">お問い合わせ先について</h2>
+					<p>プライベートサロン ～ラ・ペルル～</p>
+					<p class="tel mincho fw_bold" data-tel="<?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['tel'];?>
+"><i class="fas fa-phone-alt"></i><?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['tel'];?>
+</p>
+					<p class="mail mincho"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['mail'];?>
+"><?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['mail'];?>
+</a></p>
+					<p class="instagram"><a href="https://www.instagram.com/shiori4799/" target="_blank">Instagram（アカウント：shiori4799）</a>のDMからもご予約、<br>お問い合わせを受け付けております。 </p>
+			</div>
+		</div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="private salon ~la perle~"></div>
 	</section>
 </div>
 </main>

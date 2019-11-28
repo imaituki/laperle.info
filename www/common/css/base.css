@@ -84,9 +84,9 @@ input.w150 { width:150px; }
 .pos_al { text-align:left;}
 .pos_ac { text-align:center;}
 .pos_ar { text-align:right;}
-.pos_vt { vertical-align:top;}
-.pos_vm { vertical-align:middle;}
-.pos_vb { vertical-align:bottom;}
+.pos_vt { vertical-align:top !important;}
+.pos_vm { vertical-align:middle !important;}
+.pos_vb { vertical-align:bottom !important;}
 	@media screen and (min-width: 576px){
 		.pos_ac-pc { text-align:center; }
 	}

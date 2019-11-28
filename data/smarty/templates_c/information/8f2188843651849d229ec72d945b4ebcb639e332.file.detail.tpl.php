@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-14 15:45:20
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 10:08:38
          compiled from "./detail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16079345195dc912400ee812-37862559%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8f2188843651849d229ec72d945b4ebcb639e332' => 
     array (
       0 => './detail.tpl',
-      1 => 1573713918,
+      1 => 1574816913,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dc91240109e58_19999524')) {function content_5dc91240109e58_19999524($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/brownotter8/data/smarty/libs/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_5dc91240109e58_19999524')) {function content_5dc91240109e58_19999524($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/laperle/data/smarty/libs/plugins/modifier.date_format.php';
 ?><!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -40,111 +40,85 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_javascript']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <script type="text/javascript" src="/common/js/lightbox/import.js"></script>
-
 </head>
-<body id="information">
+<body id="information_detail">
 <div id="base">
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_header']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <main>
-<div id="body" class="bg_dot">
+<div id="body">
 	<div id="page_title">
-		<div class="img_back"><img src="/common/image/contents/information/top.jpg" alt="お知らせ"></div>
+		<div class="img_back"><img src="/common/image/contents/title.jpg" alt="新着情報"></div>
 		<div class="page_title_wrap">
-			<div class="center">
-				<h2>お知らせ</h2>
+			<div class="center3 mincho cg">
+				<h2 class="mincho"><span class="en">Information</span>～新着情報～</h2>
 			</div>
 		</div>
 	</div>
-	<div id="pankuzu" >
-		<div class="center">
-			<ul>
-				<li><a href="/">HOME</a></li>
-				<li><a href="/information/">お知らせ</a></li>
-				<li><?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
+	<section class="bg_1 pos_re">
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="private salon ~la perle~"></div>
+		<div class="center3">
+			<div id="pankuzu">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 </li>
-			</ul>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<section>
-		<div class="wrapper center">
-			<div class="box mb50">
-				<div class="hl_2">
-					<h2><?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
+		<div class="wrapper pos_re">
+			<div class="center3 information">
+				<h2 class="mincho pos_ac"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 </h2>
-					<div class="right">
-						<span class="date"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['t_information']->value['date'],"%Y/%m/%d");?>
-</span>
-					</div>
-				</div>
+				<div class="mb50 mincho pos_ac"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['t_information']->value['date'],"%Y/%m/%d");?>
+</div>
 				<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image1']) {?>
-				<div class="photo pos_ac"><img src="/common/photo/information/image1/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image1'];?>
+				<div class="center2">
+					<div class="pos_ac mb20"><img src="<?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
+/common/photo/information/image1/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image1'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 "></div>
-				<?php if ($_smarty_tpl->tpl_vars['t_information']->value['caption1']) {?> <div class="small pos_ac mb30"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['caption1'];?>
-</div><?php }?>
-				<?php }?>
-				<div class="info_comment">
-					<?php echo $_smarty_tpl->tpl_vars['t_information']->value['comment'];?>
-
-				</div>
-				<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image2']||$_smarty_tpl->tpl_vars['t_information']->value['image3']||$_smarty_tpl->tpl_vars['t_information']->value['image4']||$_smarty_tpl->tpl_vars['t_information']->value['image5']) {?>
-				<div class="row sub_photo">
-					<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image2']) {?>
-					<div class="col-xs-3 col-6">
-						<div class="photo mb30">
-							<a href="/common/photo/information/image2/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image2'];?>
-" rel="lightbox" ><div class="img_rect"><img src="/common/photo/information/image2/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image2'];?>
-" alt="<?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
-"></div></a>
-							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['caption2']) {?> <div class="small"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['caption2'];?>
-</div><?php }?>
-						</div>
-					</div>
 					<?php }?>
-					<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image3']) {?>
-					<div class="col-xs-3 col-6">
-						<div class="photo mb30">
-							<a href="/common/photo/information/image3/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image3'];?>
-" rel="lightbox" ><div class="img_rect"><img src="/common/photo/information/image3/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image3'];?>
+					<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image2']||$_smarty_tpl->tpl_vars['t_information']->value['image3']||$_smarty_tpl->tpl_vars['t_information']->value['image4']) {?>
+						<div class="row mb30">
+							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image2']) {?>
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image2/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image2'];?>
+" rel="lightbox">
+									<div class="img_rect"><img src="/common/photo/information/image2/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image2'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 "></div></a>
-							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['caption3']) {?> <div class="small"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['caption3'];?>
-</div><?php }?>
-						</div>
-					</div>
-					<?php }?>
-					<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image4']) {?>
-					<div class="col-xs-3 col-6">
-						<div class="photo mb30">
-							<a href="/common/photo/information/image4/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image4'];?>
-" rel="lightbox" ><div class="img_rect"><img src="/common/photo/information/image4/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image4'];?>
+							</div>
+							<?php }?>
+							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image3']) {?>
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image3/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image3'];?>
+" rel="lightbox">
+									<div class="img_rect"><img src="/common/photo/information/image3/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image3'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 "></div></a>
-							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['caption4']) {?> <div class="small"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['caption4'];?>
-</div><?php }?>
-						</div>
-					</div>
-					<?php }?>
-					<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image5']) {?>
-					<div class="col-xs-3 col-6">
-						<div class="photo mb30">
-							<a href="/common/photo/information/image5/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image5'];?>
-" rel="lightbox" ><div class="img_rect"><img src="/common/photo/information/image5/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image5'];?>
+							</div>
+							<?php }?>
+							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['image4']) {?>
+							<div class="col-xs-4 height-1 mb20">
+								<a class="ov" href="/common/photo/information/image4/l_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image4'];?>
+" rel="lightbox">
+									<div class="img_rect"><img src="<?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
+/common/photo/information/image4/m_<?php echo $_smarty_tpl->tpl_vars['t_information']->value['image4'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['t_information']->value['title'];?>
 "></div></a>
-							<?php if ($_smarty_tpl->tpl_vars['t_information']->value['caption5']) {?> <div class="small"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['caption5'];?>
-</div><?php }?>
+							</div>
+							<?php }?>
 						</div>
-					</div>
 					<?php }?>
 				</div>
-				<?php }?>
+				<div class="mb50"><?php echo $_smarty_tpl->tpl_vars['t_information']->value['comment'];?>
+</div>
+				<div class="pos_ac"><a href="/information/<?php if ($_smarty_tpl->tpl_vars['arr_get']->value['page']!=null) {?>?page=<?php echo $_smarty_tpl->tpl_vars['arr_get']->value['page'];?>
+<?php }?>" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
-			<div class="pos_ac"><a href="<?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
-/information/<?php if ($_smarty_tpl->tpl_vars['arr_get']->value['page']!=null) {?>?page=<?php echo $_smarty_tpl->tpl_vars['arr_get']->value['page'];?>
-<?php }?>" class="button _more">一覧に戻る<i class="fa fa-arrow-right"></i></a></div>
 		</div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="private salon ~la perle~"></div>
 	</section>
 </div>
 </main>

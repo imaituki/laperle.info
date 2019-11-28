@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-14 18:38:44
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 12:02:10
          compiled from "./mail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13467651975dca0b9aa7a7c1-09775585%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '140ed6d1ad3b6643e3b58b9fe629cd46e8b9926b' => 
     array (
       0 => './mail.tpl',
-      1 => 1573723902,
+      1 => 1574823587,
       2 => 'file',
     ),
   ),
@@ -19,26 +19,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5dca0b9aab48f6_65178550',
   'variables' => 
   array (
-    't_seminar' => 0,
     'arr_post' => 0,
+    'OptionAge' => 0,
+    'OptionSex' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5dca0b9aab48f6_65178550')) {function content_5dca0b9aab48f6_65178550($_smarty_tpl) {?>--------------------------------------------------------
-■ <?php if ($_smarty_tpl->tpl_vars['t_seminar']->value['title']) {?>お申し込み<?php } else { ?>お問い合わせ<?php }?>内容
+■ ご予約内容
 --------------------------------------------------------
-<?php if ($_smarty_tpl->tpl_vars['t_seminar']->value['title']) {?>
-[申し込みセミナー]
-<?php echo $_smarty_tpl->tpl_vars['t_seminar']->value['title'];?>
-
-<?php }?>
-
 [お名前]
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['name'])===null||$tmp==='' ? '' : $tmp);?>
 
 
-[フリガナ]
+[お名前（フリガナ）]
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['ruby'])===null||$tmp==='' ? '' : $tmp);?>
+
+
+[年齢]
+<?php echo $_smarty_tpl->tpl_vars['OptionAge']->value[$_smarty_tpl->tpl_vars['arr_post']->value['age']];?>
 
 
 [メール]
@@ -49,11 +48,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['tel'])===null||$tmp==='' ? '' : $tmp);?>
 
 
-[Fax番号]
-<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['fax'])===null||$tmp==='' ? "--" : $tmp);?>
+[性別]
+<?php echo $_smarty_tpl->tpl_vars['OptionSex']->value[$_smarty_tpl->tpl_vars['arr_post']->value['sex']];?>
 
 
-[<?php if ($_smarty_tpl->tpl_vars['t_seminar']->value['title']) {?>お申し込み<?php } else { ?>お問い合わせ<?php }?>内容]
-<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['comment'])===null||$tmp==='' ? '' : $tmp);?>
+[紹介者]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['introducer'])===null||$tmp==='' ? '' : $tmp);?>
+
+
+[予約希望日時（第一希望）]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['datetime1'])===null||$tmp==='' ? '' : $tmp);?>
+
+
+[予約希望日時（第二希望）]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['datetime2'])===null||$tmp==='' ? "--" : $tmp);?>
+
+
+[予約希望日時（第三希望）]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['datetime3'])===null||$tmp==='' ? "--" : $tmp);?>
+
+
+[肌やお顔、体の悩み]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['comment1'])===null||$tmp==='' ? "--" : $tmp);?>
+
+
+[その他連絡事項]
+<?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['comment2'])===null||$tmp==='' ? "--" : $tmp);?>
 
 <?php }} ?>

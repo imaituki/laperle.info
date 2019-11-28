@@ -1,30 +1,24 @@
 @charset "utf-8";
 /*
 	Last Update:2019/11/18
-	Auther: iw
+	Auther: okada
 */
 /*===================================================================
 	#top 共通
 ===================================================================*/
-
-.text{padding: 0 15px;}
 .flex{display: flex; align-items: center;}
-.no-gutters{padding-left: 0; padding-right: 0;}
-.box{border: 1px solid;     padding: 15px 30px;}
-.photo img{box-shadow: 5px 5px 5px rgba(106,68,40,0.3); margin: 0 auto;}
-.photo_l {box-shadow: 5px 5px 5px rgba(106,68,40,0.3); }
-@media (max-width: 767px){
-.photo img{margin:0 auto;}
-}
-@media (min-width: 768px){
-}
+.box{border: 1px solid; padding: 15px 30px;}
+	@media (max-width: 767px){
+		.photo img{margin:0 auto;}
+	}
+
+.box_shadow { box-shadow:5px 5px 5px rgba(106,68,40,0.3); }
 
 
 /*===================================================================
 	#top #top_unit
 ===================================================================*/
 #top_unit{position: relative;}
-
 #main_image { position:relative; }
 #main_image .unit .text { position:absolute; top:0; left:0; width:100%; height:100%; }
 #main_image .unit .center { display:table; height:100%; }
@@ -50,34 +44,48 @@
 	#main_image_text_in {padding: 30px 0;}
 	#main_image_text h1 {font-size: 2.5em;}
 }
-
 @media (max-width: 767px){
-#main_image_text h1 { font-size: 1.5em; padding: 25px 0;  letter-spacing: unset;}
-#main_image_text_in { padding: unset;}
-#main_image_text { bottom: 30px;}
+	#main_image_text h1 { font-size: 1.5em; padding: 25px 0; letter-spacing:normal;}
+	#main_image_text_in { padding:0;}
+	#main_image_text { bottom: 30px;}
 }
+
 
 /*===================================================================
-	#top #top_menu
+	#top #about
 ===================================================================*/
-#top #top_menu .text.border{border-top: 2px solid #C6B29A; padding-top: 20px;}
-#top #top_menu .top_menu{margin-bottom: 50px;}
+#top #about {}
+	@media (min-width: 576px){
+		#top #about .title_photo { position:relative; margin-top:-150px; }
+	}
+
+
+#top #about .text.border{border-top: 2px solid #C6B29A; padding-top: 20px;}
+#top #about .top_menu{margin-bottom: 50px;}
+
 
 @media (max-width: 991px){
-	#top #top_menu .mt-50{    margin-top: 100px;}
+	#top #about .mt-50{    margin-top: 100px;}
 }
 @media (max-width: 767px){
-	#top #top_menu .top_menu{margin-bottom: 30px;}
-
+	#top #about .top_menu{margin-bottom: 30px;}
 }
+
+
 /*===================================================================
 	#top #message
 ===================================================================*/
-#top #message .z_20{z-index: 20; position: relative;}
-#top #message .z_10{z-index: 10;}
+#top #message {}
+#top #message:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/deco_h.png) no-repeat left top / auto; }
+#top #message:after{ content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/deco_f.png) no-repeat right bottom / auto; }
+#top #message > .center3 { position:relative; z-index:2; }
+
 #top #message .post{float: left;}
 #top #message .name{float: right; font-size: 20px;}
 #top #message .pd{padding: 0 20px;}
+	@media (min-width: 576px) and (max-width: 767px){
+		#top #message .pd { padding:0; }
+	}
 
 #top #message .license_unit { position:relative; border-radius: 10px; padding: 5px 0px;}
 #top #message .license_unit .license_box { display:table; width:100%; text-decoration:none; color:#444; }
@@ -124,27 +132,16 @@
 	}
 
 /*===================================================================
-	#top #flow
-===================================================================*/
-#top #flow .flow{padding: 0 30px;}
-#top #flow .flow .flow_unit{background: #F8F3E5; padding: 15px 30px;}
-#top #flow .flow .facial_treatment{padding:30px;}
-#top #flow .square{background: #F8F3E5; width: 15px; height: 12px; margin: 0 auto;}
-#top #flow .flow_unit .triangle{border-top: 20px solid #A28A75; border-right: 30px solid transparent; width: 5%; border-left: 30px solid transparent; margin: 0 auto; padding-top: 30px; margin-top: 30px;}
-#top #flow .flow_unit .h1{font-size: 2em;}
-#top #flow .flow .flow_unit .col-xs-8 p {padding: 10px 0;}
-#top #flow .number{box-shadow: 5px 5px 5px rgba(106,68,40,0.3); }
-
-@media (max-width: 767px){
-	#top #flow .sp_mt100{ margin-top: 50px;}
-	#top #flow .flow {padding: 0 15px;}
-	#top #flow .flow_unit .triangle { padding-top: 15px; margin-top: 10px;}
-	#top #flow .number{padding: 10px 15px;}
-	#top #flow .flow_unit .h1 {font-size: 1.75em;}
-}
-/*===================================================================
 	#top #menu
 ===================================================================*/
+#top #menu {}
+#top #menu:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/h_deco.png) no-repeat left top / auto; }
+#top #menu > .center3 { position:relative; }
+	@media (min-width: 576px){
+		#top #menu h2 { margin-bottom:0; }
+		#top #menu .title_photo { position:relative; margin-top:-150px; }
+	}
+
 #top #menu p.pay{right: 0; font-size: 25px; position: absolute;}
 #top #menu .flex{position: relative;}
 #top #menu .indent p{ text-indent: -1em; padding-left: 2em;}
@@ -159,22 +156,52 @@
 }
 
 @media (min-width: 768px){
-#top #menu .tbl_form tbody th {padding: unset;}
+#top #menu .tbl_form tbody th {padding:0;}
 .tbl_form tbody td {padding: 0 0 0 25px;}
-#top #menu td.pay{ padding: unset; text-align: right;}
+#top #menu td.pay{ padding:0; text-align: right;}
 }
 
 @media (max-width: 767px){
-#top #menu .tbl_form tbody td { padding: unset!important; text-align: center;}
+#top #menu .tbl_form tbody td { padding:0 !important; text-align: center;}
 #top #menu .tbl_form tbody th {text-align: center;}
 #top #menu .time{ text-align: center!important;}
 }
+
+/*===================================================================
+	#top #flow
+===================================================================*/
+#top #flow .flow{padding: 0 30px;}
+#top #flow .flow .flow_unit{background: #F8F3E5; padding: 15px 30px;}
+#top #flow .flow .facial_treatment{padding:30px;}
+#top #flow .square{background: #F8F3E5; width: 15px; height: 12px; margin: 0 auto;}
+#top #flow .flow_unit .triangle{border-top: 20px solid #A28A75; border-right: 30px solid transparent; width: 5%; border-left: 30px solid transparent; margin: 0 auto; padding-top: 30px; margin-top: 30px;}
+#top #flow .flow_unit .h1{font-size: 2em;}
+#top #flow .flow .flow_unit .col-xs-8 p {padding: 10px 0;}
+#top #flow .number{box-shadow: 5px 5px 5px rgba(106,68,40,0.3); }
+	@media (min-width: 576px){
+		#top #flow h2 { margin-bottom:0; }
+	}
+
+@media (max-width: 767px){
+	#top #flow .flow {padding: 0 15px;}
+	#top #flow .flow_unit .triangle { padding-top: 15px; margin-top: 10px;}
+	#top #flow .number{padding: 10px 15px;}
+	#top #flow .flow_unit .h1 {font-size: 1.75em;}
+}
+
+
 /*===================================================================
 	#contact
 ===================================================================*/
-#top #contact { z-index: 90;}
-#top #contact .bt_0 { z-index: 80;}
-#top #contact .contact_box {     border: 3px solid #E6DAB5; border-radius: 10px; padding: 30px;}
+#top #contact {}
+#top #contact:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/f_deco.png) no-repeat right bottom / auto; }
+#top #contact > .center3,
+#top #contact > .center4 { position:relative; }
+	@media (min-width: 576px){
+		#top #contact h2 { margin-bottom:0; }
+	}
+
+#top #contact .contact_box { border: 3px solid #E6DAB5; border-radius: 10px; padding: 30px;}
 #top #contact .contact_box i{margin-right: 5px;}
 #top #contact .contact_box .tel{font-size: 2em;}
 #top #contact .mail a{ text-decoration: unset!important;}
@@ -281,23 +308,19 @@
 /*===================================================================
 	hl
 ===================================================================*/
-h2 { font-size:1.75em; margin-bottom:30px; line-height: 10px;}
-h2 span.en{display: block; font-family: Monotype Corsiva;  font-size:1.5em; margin-bottom:30px; }
+h2 { font-size:1.75em; margin-bottom:30px; line-height: 100%;}
+h2 span.en{display: block; font-family:'Monotype Corsiva', 'Charm', cursive; }
 h2 span.sub { display: block; font-size:16px; }
 h3{font-size:1.25em;}
 h4{font-size:1.25em; border-left: 1px solid; padding-left: 10px;}
 h5{font-size:1.25em; border-bottom: 1px dotted;  padding: 10px 0;}
 
 	@media (max-width: 767px){
-	}
-	@media (min-width: 768px){
-
-	}
-	@media (max-width: 767px){
 		h2 {line-height: 30px; font-size: 1.25em;}
-		h2 span.en {margin-bottom: 0px; font-size: 1.75em;}
+		h2 span.en {margin-bottom: 5px; font-size: 1.75em;}
 	}
 	@media (min-width: 768px){
+		h2 span.en { font-size:1.5em; margin-bottom:30px; }
 	}
 
 
