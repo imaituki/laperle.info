@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 11:10:53
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-28 18:29:14
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12515870495dc90a92eb1ac5-14590928%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1574820650,
+      1 => 1574933347,
       2 => 'file',
     ),
   ),
@@ -56,60 +56,60 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</div>
 	</div>
-	<section class="bg_1 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="private salon ~la perle~"></div>
-		<div class="center3">
-			<div id="pankuzu">
-				<ul>
-					<li><a href="/">HOME</a></li>
-					<li>新着情報一覧</li>
-				</ul>
+	<section>
+		<div class="bg_1 pos_re body">
+			<div class="center3">
+				<div id="pankuzu">
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li>新着情報一覧</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="wrapper pos_re">
-			<div class="center3 information">
-				<div class="row mb50">
-					<?php  $_smarty_tpl->tpl_vars["information"] = new Smarty_Variable; $_smarty_tpl->tpl_vars["information"]->_loop = false;
+			<div class="wrapper pos_re">
+				<div class="center3 information">
+					<div class="row mb50">
+						<?php  $_smarty_tpl->tpl_vars["information"] = new Smarty_Variable; $_smarty_tpl->tpl_vars["information"]->_loop = false;
  $_smarty_tpl->tpl_vars["key"] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['t_information']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars["information"]->key => $_smarty_tpl->tpl_vars["information"]->value) {
 $_smarty_tpl->tpl_vars["information"]->_loop = true;
  $_smarty_tpl->tpl_vars["key"]->value = $_smarty_tpl->tpl_vars["information"]->key;
 ?>
-					<a href="./detail.php?id=<?php echo $_smarty_tpl->tpl_vars['information']->value['id_information'];?>
+						<a href="./detail.php?id=<?php echo $_smarty_tpl->tpl_vars['information']->value['id_information'];?>
 <?php if ($_smarty_tpl->tpl_vars['arr_get']->value['page']!=null) {?>&page=<?php echo $_smarty_tpl->tpl_vars['arr_get']->value['page'];?>
 <?php }?>">
-						<div class="col-xs-6 mb30">
-							<div class="img_rect"><img src="<?php if ($_smarty_tpl->tpl_vars['information']->value['image1']) {?><?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
+							<div class="col-xs-6 mb30">
+								<div class="img_rect"><img src="<?php if ($_smarty_tpl->tpl_vars['information']->value['image1']) {?><?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
 /common/photo/information/image1/m_<?php echo $_smarty_tpl->tpl_vars['information']->value['image1'];?>
 <?php } else { ?><?php echo $_smarty_tpl->tpl_vars['_RENEWAL_DIR']->value;?>
 /common/image/contents/null.jpg<?php }?>" alt="<?php echo $_smarty_tpl->tpl_vars['information']->value['title'];?>
 "></div>
-							<div class="bg_clear">
-								<p><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['information']->value['date'],"%Y/%m/%d");?>
+								<div class="bg_clear">
+									<p><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['information']->value['date'],"%Y/%m/%d");?>
 </p>
-								<p><?php echo $_smarty_tpl->tpl_vars['information']->value['title'];?>
+									<p><?php echo $_smarty_tpl->tpl_vars['information']->value['title'];?>
 </p>
+								</div>
 							</div>
-						</div>
-					</a>
-					<?php }
+						</a>
+						<?php }
 if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 ?>
-					<div class="pos_ac">お知らせはありません。</div>
-					<?php } ?>
-				</div>
-				<?php if ($_smarty_tpl->tpl_vars['page_navi']->value['LinkPage']) {?>
-				<div class="list_pager">
-					<ul class="mt10">
-						<?php echo $_smarty_tpl->tpl_vars['page_navi']->value['LinkPage'];?>
+						<div class="pos_ac">お知らせはありません。</div>
+						<?php } ?>
+					</div>
+					<?php if ($_smarty_tpl->tpl_vars['page_navi']->value['LinkPage']) {?>
+					<div class="list_pager">
+						<ul class="mt10">
+							<?php echo $_smarty_tpl->tpl_vars['page_navi']->value['LinkPage'];?>
 
-					</ul>
+						</ul>
+					</div>
+					<?php }?>
 				</div>
-				<?php }?>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="private salon ~la perle~"></div>
 	</section>
 </div>
 </main>

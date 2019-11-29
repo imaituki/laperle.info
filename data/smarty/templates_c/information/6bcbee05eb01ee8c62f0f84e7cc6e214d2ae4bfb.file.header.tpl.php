@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 12:53:52
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-28 18:14:00
          compiled from "/home/laperle/www//common/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2749133165ddcf98f470dc0-33514175%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6bcbee05eb01ee8c62f0f84e7cc6e214d2ae4bfb' => 
     array (
       0 => '/home/laperle/www//common/include/header.tpl',
-      1 => 1574823664,
+      1 => 1574931222,
       2 => 'file',
     ),
   ),
@@ -29,33 +29,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<nav>
 				<div class="main">
 					<ul>
-						<li class="navi_f"><a href="./#top_menu">～フェイシャルレメディ&reg;とは～</a></li>
-						<li><a href="./#information">新着情報</a></li>
-						<li><a href="./#menu">店舗案内</a></li>
-						<li class="sp_menu"><a href="./#contact">ご予約について</a></li>
+						<li class="navi_f"><a href="/#about">フェイシャルレメディ&reg;とは</a></li>
+						<li><a href="/information/">新着情報</a></li>
+						<li><a href="/#menu">店舗案内</a></li>
 					</ul>
+				</div>
+				<div class="btn_contact mincho">
+					<a href="/#contact" class="ov"><i class="fa fa-envelope"></i>ご予約についてはこちら</a>
+				</div>
+				<div class="sns_icon">
+					<a class="fb ov ga_link" href="https://www.facebook.com/facialremedy.laperle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a class="line ov ga_link" href="https://line.me/R/ti/p/%40994etixo" target="_blank"><i class="fab fa-line"></i></a>
+					<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a class="ameblo ov ga_link" href="https://ameblo.jp/k2409081/" target="_blank"><i class="fas fa-pencil-alt"></i></a>
+					<a class="contact ov" href="/#contact"><i class="fa fa-envelope"></i></a>
 				</div>
 			</nav>
 		</div>
-		<div id="head_contact" class="mincho pos_ar">
-			<a href="./#contact"><i class="fa fa-envelope"></i>ご予約についてはこちら</a>
+		<div id="head_contact" class="btn_contact mincho pos_ar">
+			<a href="/#contact" class="ov"><i class="fa fa-envelope"></i>ご予約についてはこちら</a>
 		</div>
 		<div id="btn_open"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
-	</div>
-	<div class="sns_icon center">
-		<div class="icon">
-			<a class="fb ov ga_link" href="###" target="_blank" style="opacity: 1;"><i class="fab fa-facebook-f"></i></a>
-			<a class="line ov ga_link" href="###" target="_blank" style="opacity: 1;"><i class="fab fa-line"></i></a>
-			<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
-		</div>
-	</div>
-	<div class="fixed_menu">
-		<div>
-			<a class="fb ov ga_link" href="###" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a class="line ov ga_link" href="###" target="_blank"><p><i class="fab fa-line"></i></p></a>
-			<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a class="contact ov" href="./#contact"><i class="fa fa-envelope"></i></a>
-		</div>
 	</div>
 </div>
 </header>

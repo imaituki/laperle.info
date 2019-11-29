@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 20:04:18
+<?php /* Smarty version Smarty-3.1.18, created on 2019-11-28 20:02:00
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1856378865dccf1764d4590-07011526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1574852653,
+      1 => 1574938916,
       2 => 'file',
     ),
   ),
@@ -260,18 +260,20 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 						</div>
 						<h5 class="mb20">キャンセル料金</h5>
 						<p class="mb20">キャンセル料金につきましては以下の金額をいただいております。</p>
-						<table class="tbl_form box mb30">
-							<tbody>
-								<tr>
-									<th>前日のキャンセル</th>
-									<td class="mincho pay">施術代の50％</td>
-								</tr>
-								<tr>
-									<th>当日のキャンセル</th>
-									<td class="mincho pay c_red">施術代全額</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="box mb30">
+							<table class="tbl_menu">
+								<tbody>
+									<tr>
+										<th>前日のキャンセル</th>
+										<td class="mincho pay">施術代の50％</td>
+									</tr>
+									<tr>
+										<th>当日のキャンセル</th>
+										<td class="mincho pay c_red">施術代全額</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 					<div class="col-sm-6 height-1">
 						<h4 class="mincho mb20">営業時間</h4>
@@ -281,10 +283,10 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 									<p class="pos_ac">完全予約制</p>
 								</div>
 							</div>
-							<div class="col-xs-7 height-1 pos_ar mincho">
+							<div class="col-xs-7 height-1 mincho">
 								<p class="time"><?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['worktime'];?>
 </p>
-								<p>（最終受付）</p>
+								<p class="pos_ar">（最終受付）</p>
 							</div>
 						</div>
 						<h4 class="mincho">場所</h4>

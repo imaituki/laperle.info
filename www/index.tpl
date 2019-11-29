@@ -206,18 +206,20 @@
 						</div>
 						<h5 class="mb20">キャンセル料金</h5>
 						<p class="mb20">キャンセル料金につきましては以下の金額をいただいております。</p>
-						<table class="tbl_form box mb30">
-							<tbody>
-								<tr>
-									<th>前日のキャンセル</th>
-									<td class="mincho pay">施術代の50％</td>
-								</tr>
-								<tr>
-									<th>当日のキャンセル</th>
-									<td class="mincho pay c_red">施術代全額</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="box mb30">
+							<table class="tbl_menu">
+								<tbody>
+									<tr>
+										<th>前日のキャンセル</th>
+										<td class="mincho pay">施術代の50％</td>
+									</tr>
+									<tr>
+										<th>当日のキャンセル</th>
+										<td class="mincho pay c_red">施術代全額</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 					<div class="col-sm-6 height-1">
 						<h4 class="mincho mb20">営業時間</h4>
@@ -227,9 +229,9 @@
 									<p class="pos_ac">完全予約制</p>
 								</div>
 							</div>
-							<div class="col-xs-7 height-1 pos_ar mincho">
+							<div class="col-xs-7 height-1 mincho">
 								<p class="time">{$mst_siteconf.worktime}</p>
-								<p>（最終受付）</p>
+								<p class="pos_ar">（最終受付）</p>
 							</div>
 						</div>
 						<h4 class="mincho">場所</h4>
