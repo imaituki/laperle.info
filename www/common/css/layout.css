@@ -53,7 +53,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 	}
 
 #head .site_logo {}
-#head .site_logo a { display:block; max-width:300px; }
+#head .site_logo a { display:block; max-width:317px; }
 	@media (max-width: 991px){
 		#head .site_logo { padding:10px 15px 10px 0; }
 		#head.fixed .site_logo a { display:none; }

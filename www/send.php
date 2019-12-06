@@ -85,7 +85,7 @@ if( empty( $message["ng"] ) ) {
 	//  お客様用
 	//----------------------------------------
 	// ヘッダー
-	$header1  = "From: " . mb_encode_mimeheader( "フェイシャルレメディサロン la perle" ) . " <" . $mail_conf["info"]["admin_mail"] . ">\n";
+	$header1  = "From: " . mb_encode_mimeheader( "フェイシャルレメディサロン ~la perle~" ) . " <" . $mail_conf["info"]["admin_mail"] . ">\n";
 	$header1 .= "Bcc: "  . $mail_conf["info"]["bcc_mail"] . "\n";
 	$header1 .= "Content-Type: text/plain; charset=iso-2022-jp\n";
 	$header1 .= "Content-Transfer-Encoding: 7bit\n";

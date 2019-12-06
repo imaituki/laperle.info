@@ -11,4 +11,4 @@
 <meta property="og:title" content="{if $_HTML_HEADER_ORIGINAL.title|default:"" != NULL }{$_HTML_HEADER_ORIGINAL.title|default:""}{else}{if $_HTML_HEADER.title|default:"" != NULL}{$_HTML_HEADER.title|default:""} | {/if}{$_HTML_HEADER_DEFAULT.title|default:""}{/if}">
 <meta property="og:site_name" content="{$_HTML_HEADER_DEFAULT.title|default:""}">
 <meta property="og:description" content="{if $_HTML_HEADER_ORIGINAL.description|default:"" != NULL }{$_HTML_HEADER_ORIGINAL.description|default:""}{else}{$_HTML_HEADER.description|default:""}{$_HTML_HEADER_DEFAULT.description|default:""}{/if}">
-<meta name="apple-mobile-web-app-title" content=" フェイシャルレメディサロン la perle" />
+<meta name="apple-mobile-web-app-title" content=" フェイシャルレメディサロン ~la perle~" />

@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<section class="bg_1 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="フェイシャルレメディサロン la perle"></div>
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -118,7 +118,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php }?>" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン la perle"></div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 	</section>
 </div>
 </main>

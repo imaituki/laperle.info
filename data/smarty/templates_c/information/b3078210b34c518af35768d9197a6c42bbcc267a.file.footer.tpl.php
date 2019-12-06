@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5ddcf98f477df3_82556830')) {function content_5ddcf98f477df3_82556830($_smarty_tpl) {?><footer>
 <div id="foot">
 	<div class="foot_wrap center">
-		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="フェイシャルレメディサロン la perle"></a></div>
+		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
 		<div class="foot_navi">
 			<ul>
 				<li><a href="/#about">フェイシャルレメディ&reg;とは</a></li>
