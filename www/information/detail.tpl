@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<section class="bg_1 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="フェイシャルレメディサロン la perle"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -65,7 +65,7 @@
 				<div class="pos_ac"><a href="/information/{if $arr_get.page != NULL}?page={$arr_get.page}{/if}" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン la perle"></div>
 	</section>
 </div>
 </main>

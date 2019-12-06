@@ -20,7 +20,7 @@
 		</div>
 	</div>
 	<section class="bg_3 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="フェイシャルレメディサロン la perle"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -48,7 +48,7 @@
 				<div class="pos_ac "><a href="/" class="button _more"><i class="fa fa-arrow-right"></i>トップページに戻る</a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="フェイシャルレメディサロン la perle"></div>
 	</section>
 </div>
 </main>

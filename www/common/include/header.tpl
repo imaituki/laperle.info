@@ -3,7 +3,7 @@
 <header>
 <div id="head">
 	<div class="head_wrap center">
-		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="private salon ~la perle~"></a></div>
+		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン la perle"></a></div>
 		<div id="head_navi">
 			<nav>
 				<div class="main">

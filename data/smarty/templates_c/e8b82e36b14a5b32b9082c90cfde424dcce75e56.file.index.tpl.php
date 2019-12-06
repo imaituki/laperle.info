@@ -55,24 +55,24 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 <div id="top_unit">
 	<div id="main_image">
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="private salon ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="private salon ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="フェイシャルレメディサロン la perle"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="private salon ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="private salon ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="private salon ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="private salon ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン la perle"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="private salon ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="private salon ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン la perle"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="private salon ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="private salon ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン la perle"></div>
 		</div>
 	</div>
 	<div id="main_image_text">
