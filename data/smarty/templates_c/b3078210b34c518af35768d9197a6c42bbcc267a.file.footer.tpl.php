@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 19:44:09
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-06 12:27:30
          compiled from "/home/laperle/www//common/include/footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19589490125ddb2734323112-62421240%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b3078210b34c518af35768d9197a6c42bbcc267a' => 
     array (
       0 => '/home/laperle/www//common/include/footer.tpl',
-      1 => 1574851428,
+      1 => 1575602678,
       2 => 'file',
     ),
   ),
