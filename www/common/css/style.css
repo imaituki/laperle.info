@@ -197,7 +197,7 @@
 #top #contact .contact_box .tel{font-size: 2em;}
 #top #contact .mail a { text-decoration:none;}
 #top #contact .instagram a { color: #6A4428 !important; text-decoration:none;}
-#top.pc #contact .mail a:hover, 
+#top.pc #contact .mail a:hover,
 #top.pc #contact .instagram a:hover { text-decoration:underline; }
 
 .tbl_form { width:100%; border-collapse:separate; border-spacing:0 30px; }
@@ -266,7 +266,7 @@
 #privacy .privacy p i{margin-right: 5px;}
 #privacy .mail a,
 #privacy .instagram a{ color: #6A4428; text-decoration:none; }
-#privacy.pc .mail a:hover, 
+#privacy.pc .mail a:hover,
 #privacy.pc .instagram a:hover { text-decoration:underline; }
 
 
@@ -330,7 +330,7 @@ h5{font-size:1.25em; border-bottom: 1px dotted;  padding: 10px 0;}
 	button
 ===================================================================*/
 .button,
-a.button { display:inline-block; position:relative; text-decoration:none; text-align:center; line-height:100%; border:1px solid #CB4E4E; border-radius: 10px; color:#fff; padding:20px 50px; 
+a.button { display:inline-block; position:relative; text-decoration:none; text-align:center; line-height:100%; border:1px solid #CB4E4E; border-radius: 10px; color:#fff; padding:20px 50px;
 /* text-shadow:#6A4428 1px 1px 2px, #6A4428 -1px 1px 2px,#6A4428 1px -1px 2px, #6A4428 -1px -1px 2px; */ font-size:1.15em; background: #CB4E4E; }
 .button i { margin:0 5px; position: absolute; right: 15px;}
 	@media (max-width: 767px){
@@ -355,7 +355,7 @@ body.pc .button._back:hover{color: #BFBFBF;}
 	color
 ===================================================================*/
 .bg_clear{background: rgba(255,255,255,0.7); position: relative; z-index: 100;}
-.bg_0{background:url(../image/contents/top/back_0.jpg) repeat center top / cover;}
+.bg_0{background:url(../image/contents/top/back_0.jpg) repeat center top / 100% auto;}
 .bg_1{background:url(../image/contents/top/back_1.jpg) repeat center top / cover;}
 .bg_2{background:url(../image/contents/top/back_2.jpg) no-repeat center top / cover; }
 .bg_3{background:url(../image/contents/top/back_3.jpg) repeat center top / cover; }
