@@ -22,15 +22,15 @@
 			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 	</div>
@@ -68,7 +68,7 @@
 				<div class="row mb50">
 					<div class="col-xs-4 col-xs-push-8 height-1 disp_tb name_box">
 						<div class="disp_tc pos_vt">
-							<div class="box_shadow bor10 mb20"><img src="/common/image/contents/top/image2.jpg" alt="松井志保里"></div>
+							<div class="box_shadow bor10 mb20"><img src="/common/image/contents/top/image2.jpg" alt="松井しおり"></div>
 							<div class="pd">
 								<p>フェイシャルレメディ&reg;協会</p>
 								<p class="post">認定エステティシャン</p>
@@ -193,7 +193,7 @@
 						<h4 class="mincho">メニュー・料金</h4>
 						<h5 class="mb20">フェイシャルレメディ&reg; 80分</h5>
 						<div class="flex mb30">
-							<p class="tag c_red">ご新規様</p>
+							<p class="tag c_red">新規価格</p>
 							<p class="mincho pay fw_bold c_red">￥10,000</p>
 						</div>
 						<div class="flex mb30">
@@ -236,7 +236,7 @@
 						</div>
 						<h4 class="mincho">場所</h4>
 						<div class="indent">
-							<p>{$mst_siteconf.address}</p>
+							<p>{$mst_siteconf.address|nl2br}</p>
 							<p>※プライベートサロンのため、ご予約時に詳しい場所のご案内をさせていただきます。</p>
 						</div>
 					</div>
@@ -336,7 +336,6 @@
 				<div class="contact_box pos_ac bg_clear">
 					<p class="tel c_red mincho fw_bold" data-tel="{$mst_siteconf.tel}"><i class="fas fa-phone-alt"></i>{$mst_siteconf.tel}</p>
 					<p class="mail c_red mincho mb10"><i class="fa fa-envelope"></i><a href="mailto:{$mst_siteconf.mail}" class="c_red">{$mst_siteconf.mail}</a></p>
-					<p class="instagram"><a href="https://www.instagram.com/shiori4799/" target="_blank">Instagram（アカウント：shiori4799）</a>のDMからもご予約、<br class="hidden-only">お問い合わせを受け付けております。</p>
 				</div>
 			</div>
 			<div id="form" class="center3">
