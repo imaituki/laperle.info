@@ -176,6 +176,12 @@ $(function(){
 			}
 		}
 	});
+	
+	$('#head_navi a').on('click',function(){
+		if( $('#menu_cover').get(0) ){
+			 $('#btn_open a').trigger('click');
+		}
+	});
 
 	// tab sort
 	$('.tab_sort a').on('click',function(){

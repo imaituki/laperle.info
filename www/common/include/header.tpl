@@ -30,6 +30,6 @@
 		</div>
 		<div id="btn_open"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
 	</div>
-	<div id="side_contact"><a href="/#contact"><i class="fa fa-envelope"></i></a></div>
+	<div id="side_contact" class="mincho"><a href="/#contact"><i class="fa fa-envelope"></i><br>ご予約</a></div>
 </div>
 </header>

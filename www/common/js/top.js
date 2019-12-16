@@ -16,6 +16,7 @@ $(function(){
 		slidesToScroll: 1,
 		pauseOnFocus: false,
 		pauseOnHover: false,
+		accessibility:true,
 		infinite: true
 	});
 
