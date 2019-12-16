@@ -58,6 +58,7 @@ $smarty->assign( "arr_post", $arr_post );
 // オプション設定
 $smarty->assign( "OptionAge"     , $OptionAge     );
 $smarty->assign( "OptionSex"     , $OptionSex     );
+$smarty->assign( "OptionTime"    , $OptionTime    );
 
 
 // エラーチェック

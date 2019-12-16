@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-06 12:27:30
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 17:17:01
          compiled from "/home/laperle/www//common/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14172287435ddb273431dd08-77240625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6bcbee05eb01ee8c62f0f84e7cc6e214d2ae4bfb' => 
     array (
       0 => '/home/laperle/www//common/include/header.tpl',
-      1 => 1575602679,
+      1 => 1576225013,
       2 => 'file',
     ),
   ),
@@ -51,6 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 		<div id="btn_open"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
 	</div>
+	<div id="side_contact"><a href="/#contact"><i class="fa fa-envelope"></i></a></div>
 </div>
 </header>
 <?php }} ?>

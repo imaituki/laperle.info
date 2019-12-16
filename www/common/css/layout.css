@@ -133,7 +133,7 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 /*===================================================================
 	#foot
 ===================================================================*/
-#foot { position:relative; color:#6A4428; background:url(../image/foot/back.jpg) repeat center top / cover; }
+#foot { position:relative; color:#6A4428; background:url(../image/foot/back.jpg) repeat center top / 100% auto; }
 #foot a { color:#6A4428; text-decoration:none; }
 #foot .foot_navi ul { text-align:center; }
 #copyright { font-size:13px; text-align:center; color:#6A4428; padding:10px 0 0;  border-top: 1px dotted; }

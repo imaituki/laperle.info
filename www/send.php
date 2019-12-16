@@ -59,6 +59,7 @@ if( empty( $message["ng"] ) ) {
 	// オプション設定
 	$smarty->assign( "OptionAge"     , $OptionAge     );
 	$smarty->assign( "OptionSex"     , $OptionSex     );
+	$smarty->assign( "OptionTime"    , $OptionTime    );
 
 
 	// テンプレートの取得

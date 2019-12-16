@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-28 18:16:31
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 22:38:33
          compiled from "/home/laperle/www//common/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8671834005dddd10a72ab05-37715350%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6bcbee05eb01ee8c62f0f84e7cc6e214d2ae4bfb' => 
     array (
       0 => '/home/laperle/www//common/include/header.tpl',
-      1 => 1574931222,
+      1 => 1576225013,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <header>
 <div id="head">
 	<div class="head_wrap center">
-		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="private salon ~la perle~"></a></div>
+		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
 		<div id="head_navi">
 			<nav>
 				<div class="main">
@@ -51,6 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 		<div id="btn_open"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
 	</div>
+	<div id="side_contact"><a href="/#contact"><i class="fa fa-envelope"></i></a></div>
 </div>
 </header>
 <?php }} ?>

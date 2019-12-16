@@ -37,46 +37,55 @@
 						<table class="tbl_form mb50">
 							<tbody>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>お名前</th>
+									<th scope="row">お名前</th>
 									<td>{$arr_post.name}<input type="hidden" name="name" value="{$arr_post.name}"></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>お名前（フリガナ）</th>
+									<th scope="row">お名前（フリガナ）</th>
 									<td>{$arr_post.ruby}<input type="hidden" name="ruby" value="{$arr_post.ruby}" ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>年齢</th>
+									<th scope="row">年齢</th>
 									<td>{$OptionAge[$arr_post.age]}<input type="hidden" name="age" value="{$arr_post.age}" ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>メールアドレス</th>
+									<th scope="row">メールアドレス</th>
 									<td>{$arr_post.mail}<input type="hidden" name="mail" value="{$arr_post.mail}" ></td>
 
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>電話番号</th>
+									<th scope="row">電話番号</th>
 									<td>{$arr_post.tel}<input type="hidden" name="tel" value="{$arr_post.tel}" ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>性別</th>
+									<th scope="row">性別</th>
 									<td>{$OptionSex[$arr_post.sex]}<input type="hidden" name="sex" value="{$arr_post.sex}" ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>紹介者</th>
+									<th scope="row">紹介者</th>
 									<td>{$arr_post.introducer}<input type="hidden" name="introducer" value="{$arr_post.introducer}" ></td>
 
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>予約希望日時（第一希望）</th>
-									<td>{$arr_post.datetime1}<input type="hidden" name="datetime1" value="{$arr_post.datetime1}" ></td>
+									<th scope="row">予約希望日時（第一希望）</th>
+									<td>{$arr_post.date1}　{$OptionTime[$arr_post.time1]}
+										<input type="hidden" name="date1" value="{$arr_post.date1}" >
+										<input type="hidden" name="time1" value="{$arr_post.time1}" >
+									</td>
 								</tr>
 								<tr>
 									<th scope="row">予約希望日時（第二希望）</th>
-									<td>{$arr_post.datetime2|default:"--"}<input type="hidden" name="datetime2" value="{$arr_post.datetime2}" ></td>
+									<td>{$arr_post.date2|default:"--"}　{if $arr_post.time2}{$OptionTime[$arr_post.time2]}{/if}
+										<input type="hidden" name="date2" value="{$arr_post.date2}" >
+										<input type="hidden" name="time2" value="{$arr_post.time2}" >
+									</td>
 								</tr>
 								<tr>
 									<th scope="row">予約希望日時（第三希望）</th>
-									<td>{$arr_post.datetime3|default:"--"}<input type="hidden" name="datetime3" value="{$arr_post.datetime3}" ></td>
+									<td>{$arr_post.date3|default:"--"}　{if $arr_post.time3}{$OptionTime[$arr_post.time3]}{/if}
+										<input type="hidden" name="date3" value="{$arr_post.date3}" >
+										<input type="hidden" name="time3" value="{$arr_post.time3}" >
+									</td>
 								</tr>
 								<tr class="last">
 									<th scope="row" style="vertical-align: unset;">肌やお顔、体の悩み</th>

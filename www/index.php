@@ -36,6 +36,7 @@ $smarty->assign( "t_information" , $t_information );
 // オプション設定
 $smarty->assign( "OptionAge"     , $OptionAge     );
 $smarty->assign( "OptionSex"     , $OptionSex     );
+$smarty->assign( "OptionTime"    , $OptionTime    );
 
 // 表示
 $smarty->display("index.tpl");

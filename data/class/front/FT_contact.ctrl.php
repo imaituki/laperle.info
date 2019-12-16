@@ -80,13 +80,28 @@ class FT_contact {
 		$objInputCheck->entryData( "お名前", "name", $arrVal["name"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "フリガナ", "ruby", $arrVal["ruby"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_KANA" ), 0, 255 );
 		$objInputCheck->entryData( "年齢", "age", $arrVal["age"], array( "CHECK_EMPTY_ZERO"), null, null );
+		$objInputCheck->entryData( "メールアドレス", "mail", $arrVal["mail"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_MAIL" ), 0, 255 );
 		$objInputCheck->entryData( "性別", "sex", $arrVal["sex"], array( "CHECK_EMPTY_ZERO"), null, null );
 		$objInputCheck->entryData( "紹介者", "introducer", $arrVal["introducer"], array( "CHECK_EMPTY"), 0, 255 );
-		$objInputCheck->entryData( "メールアドレス", "mail", $arrVal["mail"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_MAIL" ), 0, 255 );
 		$objInputCheck->entryData( "電話番号", "tel", $arrVal["tel"], array( "CHECK_EMPTY", "CHECK_TEL" ), null, null );
+		$objInputCheck->entryData( "第一希望日"  , "date1" , $arrVal["date1"], array( "CHECK_EMPTY"), null, null );
+		$objInputCheck->entryData( "第一希望時間"  , "time1" , $arrVal["time1"], array( "CHECK_EMPTY_ZERO"), null, null);
 
 		// チェック実行
 		$res["ng"] = $objInputCheck->execCheckAll();
+
+		if( (string)$arrVal["date2"] != NULL && (string)$arrVal["time2"] == 0 ){
+			$res["ng"]["date2"] .= "日付が指定されています。時間を選択してください。";
+		}
+		if( (string)$arrVal["date3"] != NULL && (string)$arrVal["time3"] == 0 ){
+			$res["ng"]["date3"] .= "日付が指定されています。時間を選択してください。";
+		}
+		if( (string)$arrVal["date2"] == NULL && (string)$arrVal["time2"] != 0 ){
+			$res["ng"]["date2"] .= "希望時間が選択されています。日付を指定してください。";
+		}
+		if( (string)$arrVal["date3"] == NULL && (string)$arrVal["time3"] != 0 ){
+			$res["ng"]["date3"] .= "希望時間が選択されています。日付を指定してください。";
+		}
 
 		// 戻り値
 		return $res;

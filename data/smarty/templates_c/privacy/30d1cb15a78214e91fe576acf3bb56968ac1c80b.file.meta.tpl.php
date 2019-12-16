@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 10:27:38
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 22:38:33
          compiled from "/home/laperle/www//common/include/meta.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17736209315dddd10a6a10e5-58447528%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '30d1cb15a78214e91fe576acf3bb56968ac1c80b' => 
     array (
       0 => '/home/laperle/www//common/include/meta.tpl',
-      1 => 1574763338,
+      1 => 1575602678,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_5dddd10a71e915_77224127',
   'variables' => 
   array (
     '_HTML_HEADER_ORIGINAL' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '_HTML_HEADER_DEFAULT' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_5dddd10a71e915_77224127',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5dddd10a71e915_77224127')) {function content_5dddd10a71e915_77224127($_smarty_tpl) {?><title><?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['title'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
 <?php } else { ?><?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
@@ -54,5 +54,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php } else { ?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php }?>">
-<meta name="apple-mobile-web-app-title" content=" private salon ~la perle~" />
+<meta name="apple-mobile-web-app-title" content=" フェイシャルレメディサロン ~la perle~" />
 <?php }} ?>

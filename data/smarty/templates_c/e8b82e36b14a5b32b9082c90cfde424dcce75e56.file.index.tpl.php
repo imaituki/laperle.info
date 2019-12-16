@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-06 12:05:11
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 11:07:14
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1856378865dccf1764d4590-07011526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1575601077,
+      1 => 1576202833,
       2 => 'file',
     ),
   ),
@@ -55,24 +55,24 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 <div id="top_unit">
 	<div id="main_image">
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="フェイシャルレメディサロン la perle"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン la perle"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
 		</div>
 	</div>
 	<div id="main_image_text">
@@ -109,7 +109,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 				<div class="row mb50">
 					<div class="col-xs-4 col-xs-push-8 height-1 disp_tb name_box">
 						<div class="disp_tc pos_vt">
-							<div class="box_shadow bor10 mb20"><img src="/common/image/contents/top/image2.jpg" alt="松井志保里"></div>
+							<div class="box_shadow bor10 mb20"><img src="/common/image/contents/top/image2.jpg" alt="松井しおり"></div>
 							<div class="pd">
 								<p>フェイシャルレメディ&reg;協会</p>
 								<p class="post">認定エステティシャン</p>
@@ -247,7 +247,7 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 						<h4 class="mincho">メニュー・料金</h4>
 						<h5 class="mb20">フェイシャルレメディ&reg; 80分</h5>
 						<div class="flex mb30">
-							<p class="tag c_red">ご新規様</p>
+							<p class="tag c_red">新規価格</p>
 							<p class="mincho pay fw_bold c_red">￥10,000</p>
 						</div>
 						<div class="flex mb30">
@@ -291,7 +291,7 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 						</div>
 						<h4 class="mincho">場所</h4>
 						<div class="indent">
-							<p><?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['address'];?>
+							<p><?php echo nl2br($_smarty_tpl->tpl_vars['mst_siteconf']->value['address']);?>
 </p>
 							<p>※プライベートサロンのため、ご予約時に詳しい場所のご案内をさせていただきます。</p>
 						</div>
@@ -396,7 +396,6 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 					<p class="mail c_red mincho mb10"><i class="fa fa-envelope"></i><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['mail'];?>
 " class="c_red"><?php echo $_smarty_tpl->tpl_vars['mst_siteconf']->value['mail'];?>
 </a></p>
-					<p class="instagram"><a href="https://www.instagram.com/shiori4799/" target="_blank">Instagram（アカウント：shiori4799）</a>のDMからもご予約、<br class="hidden-only">お問い合わせを受け付けております。</p>
 				</div>
 			</div>
 			<div id="form" class="center3">

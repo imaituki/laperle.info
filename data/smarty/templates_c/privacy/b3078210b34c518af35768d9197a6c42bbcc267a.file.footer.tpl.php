@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-28 18:16:31
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 22:38:33
          compiled from "/home/laperle/www//common/include/footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13964285915dddd10a72fef7-65560332%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b3078210b34c518af35768d9197a6c42bbcc267a' => 
     array (
       0 => '/home/laperle/www//common/include/footer.tpl',
-      1 => 1574851428,
+      1 => 1575602678,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5dddd10a731505_13952028')) {function content_5dddd10a731505_13952028($_smarty_tpl) {?><footer>
 <div id="foot">
 	<div class="foot_wrap center">
-		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="private salon ~la perle~"></a></div>
+		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
 		<div class="foot_navi">
 			<ul>
 				<li><a href="/#about">フェイシャルレメディ&reg;とは</a></li>

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="/common/css/import.css">
 {include file=$template_javascript}
 <script type="text/javascript" src="/common/js/top.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body id="top">
 <div id="base">
@@ -396,28 +397,43 @@
 										<td>
 											{if !empty($message.ng.introducer)}<span class="error">※{$message.ng.introducer}</span>{/if}
 											<input type="text" class="mb10" name="introducer" value="{$arr_post.introducer}">
-											<span style="color:#6D6D6D; margin-left:5px;">※いない方はなしとご記入ください</span>
+											<span style="color:#6D6D6D; margin-left:5px;">※いない方は「なし」とご記入ください</span>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row"><span class="c_red">*</span>予約希望日時（第一希望）</th>
 										<td>
-											{if !empty($message.ng.datetime1)}<span class="error">※{$message.ng.datetime1}</span>{/if}
-											<input type="text" name="datetime1" value="{$arr_post.datetime1}" placeholder=1月1日の10時00分>
+											{if !empty($message.ng.date1)}<span class="error">※{$message.ng.date1}</span>{/if}
+											日付：<input name="date1" class="datepicker" readonly="readonly" value="{$arr_post.date1}"><br>
+											{if !empty($message.ng.time1)}<span class="error">※{$message.ng.time1}</span>{/if}
+											時間：<select name="time1" id="time1" class="mb10">
+												<option value="0">選択してください</option>
+												{html_options options=$OptionTime selected=$arr_post.time1}
+											</select>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row">予約希望日時（第二希望）</th>
 										<td>
-											{if !empty($message.ng.datetime2)}<span class="error">※{$message.ng.datetime2}</span>{/if}
-											<input type="text" name="datetime2" value="{$arr_post.datetime2}">
+											{if !empty($message.ng.date2)}<span class="error">※{$message.ng.date2}</span>{/if}
+											日付：<input name="date2" class="datepicker" readonly="readonly" value="{$arr_post.date2}"><br>
+											{if !empty($message.ng.time2)}<span class="error">※{$message.ng.time2}</span>{/if}
+											時間：<select name="time2" id="time2" class="mb10">
+												<option value="0">選択してください</option>
+												{html_options options=$OptionTime selected=$arr_post.time2}
+											</select>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row">予約希望日時（第三希望）</th>
 										<td>
-											{if !empty($message.ng.datetime3)}<span class="error">※{$message.ng.datetime3}</span>{/if}
-											<input type="text" name="datetime3" value="{$arr_post.datetime3}">
+											{if !empty($message.ng.date3)}<span class="error">※{$message.ng.date3}</span>{/if}
+											日付：<input name="date3" class="datepicker" readonly="readonly" value="{$arr_post.date3}"><br>
+											{if !empty($message.ng.time3)}<span class="error">※{$message.ng.time3}</span>{/if}
+											時間：<select name="time3" id="time3" class="mb10">
+												<option value="0">選択してください</option>
+												{html_options options=$OptionTime selected=$arr_post.time3}
+											</select>
 										</td>
 									</tr>
 									<tr>
@@ -450,5 +466,29 @@
 </main>
 {include file=$template_footer}
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script>
+	{literal}
+	$(function() {
+	$(".datepicker").datepicker(
+		{
+			dateFormat: 'yy年mm月dd日',
+			minDate: "+1d",
+			showButtonPanel: true,
+			closeText: '選択解除',
+			onClose: function () {
+			var event = arguments.callee.caller.caller.arguments[0];
+				if ($(event.delegateTarget).hasClass('ui-datepicker-close')) {
+					$(this).val('');
+				}
+			}
+
+		}
+	);
+	});
+	</script>
+	{/literal}
 </body>
 </html>
