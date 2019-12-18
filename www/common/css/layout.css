@@ -119,7 +119,10 @@ body { position:relative; text-align:center; overflow-x:hidden; }
 #head .sns_icon a.line { background:#2bbf13; color:#2bbf13; }
 #head .sns_icon a.line:before { content:""; background:#fff; position:absolute; top:calc(50% - 13px); left:calc(50% - 13px); width:26px; height:26px; }
 #head .sns_icon a.line i { position:relative; bottom:-5px; font-size:40px; }
-#head .sns_icon a.contact { background:#CB4E4E; display:none; }
+#head .sns_icon a.contact { background:#CB4E4E; display:none; line-height: 15px;
+font-size: 13px; }
+#head .sns_icon a.contact i{ font-size: 17px; margin-top: 7px;}
+
 	@media (max-width: 991px){
 		#head .sns_icon { padding:0 0 30px; text-align:center; }
 	}

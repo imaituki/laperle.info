@@ -21,7 +21,7 @@
 					<a class="line ov ga_link" href="https://line.me/R/ti/p/%40994etixo" target="_blank"><i class="fab fa-line"></i></a>
 					<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
 					<a class="ameblo ov ga_link" href="https://ameblo.jp/k2409081/" target="_blank"><i class="fas fa-pencil-alt"></i></a>
-					<a class="contact ov" href="/#contact"><i class="fa fa-envelope"></i></a>
+					<a class="contact ov mincho" href="/#contact"><i class="fa fa-envelope"></i><br>ご予約</a>
 				</div>
 			</nav>
 		</div>

@@ -116,7 +116,7 @@
 											<div class="img_back"><img src="/common/image/contents/top/mark2.png" alt="フェイシャルレメディ&reg;ディプロマコース"></div>
 										</div>
 										<div class="text">
-											<p>クレンジングマスター&reg;<br class="visible-only">認定講座</p>
+											<p>クレンジングマスター&reg;</p>
 										</div>
 									</div>
 								</div>
@@ -128,7 +128,7 @@
 											<div class="img_back"><img src="/common/image/contents/top/mark3.png" alt="フェイシャルレメディ&reg;︎<br>FORセルフプラクティショナー認定講座"></div>
 										</div>
 										<div class="text">
-											<p>フェイシャルレメディ&reg;︎<br>FORセルフプラクティショナー認定講座</p>
+											<p>フェイシャルレメディ&reg;︎<br>FORセルフインストラクター認定講座</p>
 										</div>
 									</div>
 								</div>
