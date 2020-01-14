@@ -65,7 +65,7 @@
 	<section>
 		<div id="message" class="wrapper bg_1">
 			<div class="center3">
-				<h2 class="mincho mb50"><span class="en">Message</span>～ごあいさつ～</h2>
+				<h2 class="mincho mb50"><span class="en">About the Beauty Therapist</span>～セラピストについて～</h2>
 				<div class="row mb50">
 					<div class="col-xs-4 col-xs-push-8 height-1 disp_tb name_box">
 						<div class="disp_tc pos_vt">
