@@ -225,11 +225,20 @@
 	}
 
 /*===================================================================
+	#contact_check
+===================================================================*/
+	#contact_check .bg_3:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/h_deco.png) no-repeat left top / auto; }
+	#contact_check .bg_3:after{ content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/f_deco.png) no-repeat right bottom / auto; }
+
+
+
+/*===================================================================
 	#contact_finish
 ===================================================================*/
 #contact_finish .bg_clear{padding: 30px 0; margin-bottom: 50px;}
 #contact_finish .finish{z-index:10; }
-
+#contact_finish  .bg_3:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/h_deco.png) no-repeat left top / auto; }
+#contact_finish  .bg_3:after{ content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../image/contents/top/f_deco.png) no-repeat right bottom / auto; }
 /*===================================================================
 	#information_list
 ===================================================================*/
