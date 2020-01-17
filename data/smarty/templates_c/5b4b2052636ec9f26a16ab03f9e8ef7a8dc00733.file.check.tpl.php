@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-11-27 12:02:01
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-16 13:50:10
          compiled from "./check.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3180762165ddcde52003e09-78787870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5b4b2052636ec9f26a16ab03f9e8ef7a8dc00733' => 
     array (
       0 => './check.tpl',
-      1 => 1574823586,
+      1 => 1576471808,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'arr_post' => 0,
     'OptionAge' => 0,
     'OptionSex' => 0,
+    'OptionTime' => 0,
     'template_footer' => 0,
   ),
   'has_nocache_code' => false,
@@ -54,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<section class="bg_3 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -71,66 +72,81 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<table class="tbl_form mb50">
 							<tbody>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>お名前</th>
+									<th scope="row">お名前</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['name'];?>
 <input type="hidden" name="name" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['name'];?>
 "></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>お名前（フリガナ）</th>
+									<th scope="row">お名前（フリガナ）</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['ruby'];?>
 <input type="hidden" name="ruby" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['ruby'];?>
 " ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>年齢</th>
+									<th scope="row">年齢</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['OptionAge']->value[$_smarty_tpl->tpl_vars['arr_post']->value['age']];?>
 <input type="hidden" name="age" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['age'];?>
 " ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>メールアドレス</th>
+									<th scope="row">メールアドレス</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['mail'];?>
 <input type="hidden" name="mail" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['mail'];?>
 " ></td>
 
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>電話番号</th>
+									<th scope="row">電話番号</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['tel'];?>
 <input type="hidden" name="tel" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['tel'];?>
 " ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>性別</th>
+									<th scope="row">性別</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['OptionSex']->value[$_smarty_tpl->tpl_vars['arr_post']->value['sex']];?>
 <input type="hidden" name="sex" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['sex'];?>
 " ></td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>紹介者</th>
+									<th scope="row">紹介者</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['introducer'];?>
 <input type="hidden" name="introducer" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['introducer'];?>
 " ></td>
 
 								</tr>
 								<tr>
-									<th scope="row"><span class="c_red">*</span>予約希望日時（第一希望）</th>
-									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime1'];?>
-<input type="hidden" name="datetime1" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime1'];?>
-" ></td>
+									<th scope="row">予約希望日時（第一希望）</th>
+									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date1'];?>
+　<?php echo $_smarty_tpl->tpl_vars['OptionTime']->value[$_smarty_tpl->tpl_vars['arr_post']->value['time1']];?>
+
+										<input type="hidden" name="date1" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date1'];?>
+" >
+										<input type="hidden" name="time1" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['time1'];?>
+" >
+									</td>
 								</tr>
 								<tr>
 									<th scope="row">予約希望日時（第二希望）</th>
-									<td><?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['datetime2'])===null||$tmp==='' ? "--" : $tmp);?>
-<input type="hidden" name="datetime2" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime2'];?>
-" ></td>
+									<td><?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['date2'])===null||$tmp==='' ? "--" : $tmp);?>
+　<?php if ($_smarty_tpl->tpl_vars['arr_post']->value['time2']) {?><?php echo $_smarty_tpl->tpl_vars['OptionTime']->value[$_smarty_tpl->tpl_vars['arr_post']->value['time2']];?>
+<?php }?>
+										<input type="hidden" name="date2" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date2'];?>
+" >
+										<input type="hidden" name="time2" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['time2'];?>
+" >
+									</td>
 								</tr>
 								<tr>
 									<th scope="row">予約希望日時（第三希望）</th>
-									<td><?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['datetime3'])===null||$tmp==='' ? "--" : $tmp);?>
-<input type="hidden" name="datetime3" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime3'];?>
-" ></td>
+									<td><?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['date3'])===null||$tmp==='' ? "--" : $tmp);?>
+　<?php if ($_smarty_tpl->tpl_vars['arr_post']->value['time3']) {?><?php echo $_smarty_tpl->tpl_vars['OptionTime']->value[$_smarty_tpl->tpl_vars['arr_post']->value['time3']];?>
+<?php }?>
+										<input type="hidden" name="date3" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date3'];?>
+" >
+										<input type="hidden" name="time3" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['time3'];?>
+" >
+									</td>
 								</tr>
 								<tr class="last">
 									<th scope="row" style="vertical-align: unset;">肌やお顔、体の悩み</th>
@@ -158,7 +174,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 			</form>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="private salon ~la perle~"></div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 	</section>
 </div>
 </main>

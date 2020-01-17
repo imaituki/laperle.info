@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 17:17:01
+<?php /* Smarty version Smarty-3.1.18, created on 2019-12-18 10:13:26
          compiled from "/home/laperle/www//common/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14172287435ddb273431dd08-77240625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6bcbee05eb01ee8c62f0f84e7cc6e214d2ae4bfb' => 
     array (
       0 => '/home/laperle/www//common/include/header.tpl',
-      1 => 1576225013,
+      1 => 1576631601,
       2 => 'file',
     ),
   ),
@@ -42,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<a class="line ov ga_link" href="https://line.me/R/ti/p/%40994etixo" target="_blank"><i class="fab fa-line"></i></a>
 					<a class="instagram ov ga_link" href="https://www.instagram.com/shiori4799/" target="_blank"><i class="fab fa-instagram"></i></a>
 					<a class="ameblo ov ga_link" href="https://ameblo.jp/k2409081/" target="_blank"><i class="fas fa-pencil-alt"></i></a>
-					<a class="contact ov" href="/#contact"><i class="fa fa-envelope"></i></a>
+					<a class="contact ov mincho" href="/#contact"><i class="fa fa-envelope"></i><br>ご予約</a>
 				</div>
 			</nav>
 		</div>
@@ -51,7 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 		<div id="btn_open"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
 	</div>
-	<div id="side_contact"><a href="/#contact"><i class="fa fa-envelope"></i></a></div>
+	<div id="side_contact" class="mincho"><a href="/#contact"><i class="fa fa-envelope"></i><br>ご予約</a></div>
 </div>
 </header>
 <?php }} ?>

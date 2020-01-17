@@ -103,6 +103,14 @@ class FT_contact {
 			$res["ng"]["date3"] .= "希望時間が選択されています。日付を指定してください。";
 		}
 
+		// 重複チェック
+		if( empty( $res["ng"]["date1"] ) ){
+			$date_time = array( $arrVal["date1"].$arrVal["time1"], $arrVal["date2"].$arrVal["time2"], $arrVal["date3"].$arrVal["time3"] );
+			if( $date_time != array_unique( $date_time ) ){
+				$res["ng"]["date1"] .= "希望日時が重複しています。";
+			}
+		}
+
 		// 戻り値
 		return $res;
 

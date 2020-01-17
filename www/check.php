@@ -32,8 +32,9 @@ $_HTML_HEADER["description"] = "";
 // エントリークラス
 //----------------------------------------
 // クラス呼び出し
-$objManage  = new DB_manage( _DNS );
-$objContact = new FT_contact( $objManage );
+$objManage      = new DB_manage( _DNS );
+$objContact     = new FT_contact( $objManage );
+$objInformation = new FT_information( $objManage );
 
 // 文字エンコード
 $arr_post = $objContact->convert( $arr_post );
@@ -41,9 +42,13 @@ $arr_post = $objContact->convert( $arr_post );
 // チェック
 $message = $objContact->check( $arr_post );
 
+// お知らせ
+$t_information  = $objInformation->GetSearchList( null, array("fetch" => _DB_FETCH_ALL), 4 );
+
 // クラス削除
-unset( $objManage  );
-unset( $objContact );
+unset( $objManage        );
+unset( $objContact       );
+unset( $objInformation   );
 
 //----------------------------------------
 //  smarty設定
@@ -54,6 +59,7 @@ $smarty->compile_dir .= "";
 // テンプレートに設定
 $smarty->assign( "message" , $message  );
 $smarty->assign( "arr_post", $arr_post );
+$smarty->assign( "t_information" , $t_information );
 
 // オプション設定
 $smarty->assign( "OptionAge"     , $OptionAge     );

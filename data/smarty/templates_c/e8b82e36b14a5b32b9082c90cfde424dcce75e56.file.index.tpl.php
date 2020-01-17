@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 11:07:14
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 10:05:26
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1856378865dccf1764d4590-07011526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1576202833,
+      1 => 1579223124,
       2 => 'file',
     ),
   ),
@@ -29,6 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'arr_post' => 0,
     'OptionAge' => 0,
     'OptionSex' => 0,
+    'OptionTime' => 0,
     'template_footer' => 0,
   ),
   'has_nocache_code' => false,
@@ -46,6 +47,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_javascript']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <script type="text/javascript" src="/common/js/top.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body id="top">
 <div id="base">
@@ -105,7 +107,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 	<section>
 		<div id="message" class="wrapper bg_1">
 			<div class="center3">
-				<h2 class="mincho mb50"><span class="en">Message</span>～ごあいさつ～</h2>
+				<h2 class="mincho mb50"><span class="en">About the Beauty Therapist</span>～セラピストについて～</h2>
 				<div class="row mb50">
 					<div class="col-xs-4 col-xs-push-8 height-1 disp_tb name_box">
 						<div class="disp_tc pos_vt">
@@ -120,11 +122,11 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 					</div>
 					<div class="col-xs-8 col-xs-pull-4 height-1 disp_tb">
 						<div class="disp_tc">
-							<h3 class="mb20">ラ・ペルルは「元気になれるサロンを作りたい」という思いでオープンしました。</h3>
-							<p class="mb20">日々のストレスから解放され気持ちがポジティブになり、自分自身や毎日をもっと好きになっていくサロンを目指しています。</p>
-							<p class="mb20">私自身、自律神経を整え根本からケアしていく事で、体の不調や精神的なバランスも整い、初めて長期的な変化を感じました。</p>
-							<p class="mb20">気持ちが穏やかでイライラしなくなり、家族や周りの人との人間関係が良くなったり、顔つきが明るく柔らかくなったと褒められることも。一番の変化は、以前より自己肯定感が高まり日常が楽しくなっていったことです。</p>
-							<p class="mb30">外見は美しく、心は幸せ、安心、楽しさを感じたいのは多くの女性の願いだと思います。施術を通して、そんな想いを叶えるお手伝いがしたいです。</p>
+							<h3 class="mb20">岡山唯一のフェイシャルレメディスト　松井しおり</h3>
+							<p class="mb20">大学を卒業後、全国展開の大手エステサロンに就職、過去、月300万円の売り上げが最高だと言われた薄利多売の脱毛部門の経営モデルの中、月600万円をたった一人で売り上げた、全国１位の売り上げ実績と、会社で過去最高の金額を打ち出した記録を持つエステティシャンである。</p>
+							<p class="mb20">幼い頃、全てのことに納得しないと出来ない性格であったと自覚する反面、社会人に成長するにつれ、気づけば自分の行動言動が人の顔色や、他人からの評価、を気にすることで心身のダメージを受けるように…。<br>これがストレスだとさえ気づかなかった状態。体調不良もこれが原因だとわからず、その後、心身とも辛い時期を過ごした経験もつ。</p>
+							<p class="mb20">そんな時にフェイシャルレメディ&reg;︎と出会い、学び習得することでようやく変わることができたと実感。家族の原因不明であった不調和も自身の施術で改善を目の当たりにする。<br>ストレスのスイッチを克服し、自分らしさを取り戻し、心身健康でいられることがどれほど、生きやすいのかということを実感し、自分や家族の不調を変えることができた経験を元に地元、岡山にサロンを独立開業。<br>今や多くのクライアントの、『心の安定』そこがベースである、という自身の考えから、健康や美容をフェイシャルレメディストとして提唱している。</p>
+							<p class="mb30">フェイシャルレメディ&reg;︎の創始者、岩崎るみ氏より、直々の指導を受けている認定セラピストでもあり、今もなお、自分と顧客の為にもさらに知識や技術を掘り下げ追求するために、遠方までレッスンに通っている。</p>
 						</div>
 					</div>
 				</div>
@@ -145,7 +147,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 											<div class="img_back"><img src="/common/image/contents/top/mark1.png" alt="フェイシャルレメディ&reg;ディプロマコース"></div>
 										</div>
 										<div class="text">
-											<p>フェイシャルレメディ&reg;<br class="visible-only">ディプロマコース</p>
+											<p>FRA協会 フェイシャルレメディ&reg;<br class="visible-only">ディプロマコース</p>
 										</div>
 									</div>
 								</div>
@@ -157,7 +159,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 											<div class="img_back"><img src="/common/image/contents/top/mark2.png" alt="フェイシャルレメディ&reg;ディプロマコース"></div>
 										</div>
 										<div class="text">
-											<p>クレンジングマスター&reg;<br class="visible-only">認定講座</p>
+											<p>FRA協会 クレンジングマスター&reg;</p>
 										</div>
 									</div>
 								</div>
@@ -169,7 +171,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 											<div class="img_back"><img src="/common/image/contents/top/mark3.png" alt="フェイシャルレメディ&reg;︎<br>FORセルフプラクティショナー認定講座"></div>
 										</div>
 										<div class="text">
-											<p>フェイシャルレメディ&reg;︎<br>FORセルフプラクティショナー認定講座</p>
+											<p>FRA協会 フェイシャルレメディ&reg;︎<br>FORセルフインストラクター</p>
 										</div>
 									</div>
 								</div>
@@ -181,7 +183,7 @@ if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/sma
 											<div class="img_back"><img src="/common/image/contents/top/mark4.png" alt="タッチニスト"></div>
 										</div>
 										<div class="text">
-											<p>タッチニスト</p>
+											<p>FRA協会 タッチニスト</p>
 										</div>
 									</div>
 								</div>
@@ -470,34 +472,55 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 </span><?php }?>
 											<input type="text" class="mb10" name="introducer" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['introducer'];?>
 ">
-											<span style="color:#6D6D6D; margin-left:5px;">※いない方はなしとご記入ください</span>
+											<span style="color:#6D6D6D; margin-left:5px;">※いない方は「なし」とご記入ください</span>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row"><span class="c_red">*</span>予約希望日時（第一希望）</th>
 										<td>
-											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['datetime1'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['datetime1'];?>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['date1'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['date1'];?>
 </span><?php }?>
-											<input type="text" name="datetime1" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime1'];?>
-" placeholder=1月1日の10時00分>
+											日付：<input name="date1" class="datepicker" readonly="readonly" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date1'];?>
+"><br>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['time1'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['time1'];?>
+</span><?php }?>
+											時間：<select name="time1" id="time1" class="mb10">
+												<option value="0">選択してください</option>
+												<?php echo smarty_function_html_options(array('options'=>$_smarty_tpl->tpl_vars['OptionTime']->value,'selected'=>$_smarty_tpl->tpl_vars['arr_post']->value['time1']),$_smarty_tpl);?>
+
+											</select>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row">予約希望日時（第二希望）</th>
 										<td>
-											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['datetime2'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['datetime2'];?>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['date2'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['date2'];?>
 </span><?php }?>
-											<input type="text" name="datetime2" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime2'];?>
-">
+											日付：<input name="date2" class="datepicker" readonly="readonly" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date2'];?>
+"><br>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['time2'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['time2'];?>
+</span><?php }?>
+											時間：<select name="time2" id="time2" class="mb10">
+												<option value="0">選択してください</option>
+												<?php echo smarty_function_html_options(array('options'=>$_smarty_tpl->tpl_vars['OptionTime']->value,'selected'=>$_smarty_tpl->tpl_vars['arr_post']->value['time2']),$_smarty_tpl);?>
+
+											</select>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row">予約希望日時（第三希望）</th>
 										<td>
-											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['datetime3'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['datetime3'];?>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['date3'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['date3'];?>
 </span><?php }?>
-											<input type="text" name="datetime3" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['datetime3'];?>
-">
+											日付：<input name="date3" class="datepicker" readonly="readonly" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['date3'];?>
+"><br>
+											<?php if (!empty($_smarty_tpl->tpl_vars['message']->value['ng']['time3'])) {?><span class="error">※<?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['time3'];?>
+</span><?php }?>
+											時間：<select name="time3" id="time3" class="mb10">
+												<option value="0">選択してください</option>
+												<?php echo smarty_function_html_options(array('options'=>$_smarty_tpl->tpl_vars['OptionTime']->value,'selected'=>$_smarty_tpl->tpl_vars['arr_post']->value['time3']),$_smarty_tpl);?>
+
+											</select>
 										</td>
 									</tr>
 									<tr>
@@ -535,6 +558,29 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 <?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['template_footer']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script>
+	
+	$(function() {
+	$(".datepicker").datepicker(
+		{
+			dateFormat: 'yy年mm月dd日',
+			minDate: "+1d",
+			showButtonPanel: true,
+			closeText: '選択解除',
+			onClose: function () {
+			var event = arguments.callee.caller.caller.arguments[0];
+				if ($(event.delegateTarget).hasClass('ui-datepicker-close')) {
+					$(this).val('');
+				}
+			}
+
+		}
+	);
+	});
+	
+</script>
 </body>
 </html>
 <?php }} ?>
