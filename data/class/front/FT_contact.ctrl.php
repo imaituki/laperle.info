@@ -79,7 +79,8 @@ class FT_contact {
 		// チェックエントリー
 		$objInputCheck->entryData( "お名前", "name", $arrVal["name"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "フリガナ", "ruby", $arrVal["ruby"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_KANA" ), 0, 255 );
-		$objInputCheck->entryData( "年齢", "age", $arrVal["age"], array( "CHECK_EMPTY_ZERO"), null, null );
+		// $objInputCheck->entryData( "年齢", "age", $arrVal["age"], array( "CHECK_EMPTY_ZERO"), null, null );
+		$objInputCheck->entryData( "生年月日", "birthday", implode( "-", $arrVal["birthday"] ), array( "CHECK_EMPTY", "CHECK_DATE" ), null, null );
 		$objInputCheck->entryData( "メールアドレス", "mail", $arrVal["mail"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_MAIL" ), 0, 255 );
 		$objInputCheck->entryData( "性別", "sex", $arrVal["sex"], array( "CHECK_EMPTY_ZERO"), null, null );
 		$objInputCheck->entryData( "紹介者", "introducer", $arrVal["introducer"], array( "CHECK_EMPTY"), 0, 255 );
@@ -89,6 +90,11 @@ class FT_contact {
 
 		// チェック実行
 		$res["ng"] = $objInputCheck->execCheckAll();
+
+		// 生年月日が空のとき
+		if( empty( $res["ng"]["birthday"] ) && empty( $arrVal["birthday"]["Year"] ) && empty( $arrVal["birthday"]["Month"] ) && empty( $arrVal["birthday"]["Day"] ) ){
+			$res["ng"]["birthday"] = " 生年月日は必ず入力してください。";
+		}
 
 		if( (string)$arrVal["date2"] != NULL && (string)$arrVal["time2"] == 0 ){
 			$res["ng"]["date2"] .= "日付が指定されています。時間を選択してください。";
@@ -106,6 +112,7 @@ class FT_contact {
 		// 重複チェック
 		if( empty( $res["ng"]["date1"] ) ){
 			$date_time = array( $arrVal["date1"].$arrVal["time1"], $arrVal["date2"].$arrVal["time2"], $arrVal["date3"].$arrVal["time3"] );
+			$date_time = array_filter( $date_time );
 			if( $date_time != array_unique( $date_time ) ){
 				$res["ng"]["date1"] .= "希望日時が重複しています。";
 			}

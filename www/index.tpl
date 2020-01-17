@@ -361,6 +361,14 @@
 										</td>
 									</tr>
 									<tr>
+										<th scope="row"><span class="c_red">*</span>生年月日</th>
+										<td>
+											{if $message.ng.birthday|default:"" != NULL}<p class="error">{$message.ng.birthday}</p>{/if}
+											{html_select_date2 field_array=birthday field_order=ymd order_format="%Y年 %M月 %D日" prefix="" year_empty="--" month_empty="--" day_empty="--" end_year="-100" month_format="%m" time=$arr_post.birthday|default:"0000-00-00" reverse_years=true}
+										</td>
+									</tr>
+									{*
+									<tr>
 										<th scope="row"><span class="c_red">*</span>年齢</th>
 										<td>
 											{if $message.ng.age|default:"" != NULL}<p class="error">{$message.ng.age}</p>{/if}
@@ -370,6 +378,7 @@
 											</select>
 										</td>
 									</tr>
+									*}
 									<tr>
 										<th scope="row"><span class="c_red">*</span>メールアドレス</th>
 										<td>

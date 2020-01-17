@@ -7,8 +7,8 @@
 [お名前（フリガナ）]
 {$arr_post.ruby|default:""}
 
-[年齢]
-{$OptionAge[$arr_post.age]}
+[生年月日]
+{$arr_post.birthday|implode:"-"|date_format:"%Y年%m月%d日"}
 
 [メール]
 {$arr_post.mail|default:""}

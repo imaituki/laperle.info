@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 10:05:26
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 18:50:39
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1856378865dccf1764d4590-07011526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1579223124,
+      1 => 1579254638,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'information' => 0,
     'message' => 0,
     'arr_post' => 0,
-    'OptionAge' => 0,
     'OptionSex' => 0,
     'OptionTime' => 0,
     'template_footer' => 0,
@@ -35,8 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5dccf176581ed0_11845040')) {function content_5dccf176581ed0_11845040($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/laperle/data/smarty/libs/plugins/modifier.date_format.php';
-if (!is_callable('smarty_function_html_options')) include '/home/laperle/data/smarty/libs/plugins/function.html_options.php';
+if (!is_callable('smarty_function_html_select_date2')) include '/home/laperle/data/smarty/libs/plugins/function.html_select_date2.php';
 if (!is_callable('smarty_function_html_radios')) include '/home/laperle/data/smarty/libs/plugins/function.html_radios.php';
+if (!is_callable('smarty_function_html_options')) include '/home/laperle/data/smarty/libs/plugins/function.html_options.php';
 ?><!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -426,17 +426,15 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 										</td>
 									</tr>
 									<tr>
-										<th scope="row"><span class="c_red">*</span>年齢</th>
+										<th scope="row"><span class="c_red">*</span>生年月日</th>
 										<td>
-											<?php if ((($tmp = @$_smarty_tpl->tpl_vars['message']->value['ng']['age'])===null||$tmp==='' ? '' : $tmp)!=null) {?><p class="error"><?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['age'];?>
+											<?php if ((($tmp = @$_smarty_tpl->tpl_vars['message']->value['ng']['birthday'])===null||$tmp==='' ? '' : $tmp)!=null) {?><p class="error"><?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['birthday'];?>
 </p><?php }?>
-											<select name="age" id="age">
-												<option value="0">選択してください</option>
-												<?php echo smarty_function_html_options(array('options'=>$_smarty_tpl->tpl_vars['OptionAge']->value,'selected'=>$_smarty_tpl->tpl_vars['arr_post']->value['age']),$_smarty_tpl);?>
+											<?php echo smarty_function_html_select_date2(array('field_array'=>'birthday','field_order'=>'ymd','order_format'=>"%Y年 %M月 %D日",'prefix'=>'','year_empty'=>"--",'month_empty'=>"--",'day_empty'=>"--",'end_year'=>"-100",'month_format'=>"%m",'time'=>(($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['birthday'])===null||$tmp==='' ? "0000-00-00" : $tmp),'reverse_years'=>true),$_smarty_tpl);?>
 
-											</select>
 										</td>
 									</tr>
+									
 									<tr>
 										<th scope="row"><span class="c_red">*</span>メールアドレス</th>
 										<td>

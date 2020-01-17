@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-16 14:10:04
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 16:32:43
          compiled from "./finish.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21203846265ddcf0a19e5d41-91442088%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9d20fa539703757ca9b7b6f4a04d5b6b3d279589' => 
     array (
       0 => './finish.tpl',
-      1 => 1575602955,
+      1 => 1579246361,
       2 => 'file',
     ),
   ),
@@ -52,7 +52,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<section class="bg_3 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -81,7 +80,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div class="pos_ac "><a href="/" class="button _more"><i class="fa fa-arrow-right"></i>トップページに戻る</a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 	</section>
 </div>
 </main>

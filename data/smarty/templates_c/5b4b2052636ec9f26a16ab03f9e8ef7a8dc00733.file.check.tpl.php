@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-16 13:50:10
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 18:59:48
          compiled from "./check.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3180762165ddcde52003e09-78787870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5b4b2052636ec9f26a16ab03f9e8ef7a8dc00733' => 
     array (
       0 => './check.tpl',
-      1 => 1576471808,
+      1 => 1579255055,
       2 => 'file',
     ),
   ),
@@ -23,14 +23,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'template_javascript' => 0,
     'template_header' => 0,
     'arr_post' => 0,
-    'OptionAge' => 0,
     'OptionSex' => 0,
     'OptionTime' => 0,
     'template_footer' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ddcde52075002_62070045')) {function content_5ddcde52075002_62070045($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5ddcde52075002_62070045')) {function content_5ddcde52075002_62070045($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/laperle/data/smarty/libs/plugins/modifier.date_format.php';
+?><!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -55,7 +55,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<section class="bg_3 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/h_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -84,11 +83,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " ></td>
 								</tr>
 								<tr>
-									<th scope="row">年齢</th>
-									<td><?php echo $_smarty_tpl->tpl_vars['OptionAge']->value[$_smarty_tpl->tpl_vars['arr_post']->value['age']];?>
-<input type="hidden" name="age" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['age'];?>
-" ></td>
+									<th scope="row">生年月日</th>
+									<td>
+										<?php echo smarty_modifier_date_format(implode($_smarty_tpl->tpl_vars['arr_post']->value['birthday'],"-"),"%Y年%m月%d日");?>
+
+										<input type="hidden" name="birthday[Year]" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['birthday']['Year'];?>
+">
+										<input type="hidden" name="birthday[Month]" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['birthday']['Month'];?>
+">
+										<input type="hidden" name="birthday[Day]" value="<?php echo $_smarty_tpl->tpl_vars['arr_post']->value['birthday']['Day'];?>
+">
+									</td>
 								</tr>
+								
 								<tr>
 									<th scope="row">メールアドレス</th>
 									<td><?php echo $_smarty_tpl->tpl_vars['arr_post']->value['mail'];?>
@@ -174,7 +181,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 			</form>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/f_deco.png" alt="フェイシャルレメディサロン ~la perle~"></div>
 	</section>
 </div>
 </main>

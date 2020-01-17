@@ -44,9 +44,20 @@
 									<td>{$arr_post.ruby}<input type="hidden" name="ruby" value="{$arr_post.ruby}" ></td>
 								</tr>
 								<tr>
+									<th scope="row">生年月日</th>
+									<td>
+										{$arr_post.birthday|implode:"-"|date_format:"%Y年%m月%d日"}
+										<input type="hidden" name="birthday[Year]" value="{$arr_post.birthday.Year}">
+										<input type="hidden" name="birthday[Month]" value="{$arr_post.birthday.Month}">
+										<input type="hidden" name="birthday[Day]" value="{$arr_post.birthday.Day}">
+									</td>
+								</tr>
+								{*
+								<tr>
 									<th scope="row">年齢</th>
 									<td>{$OptionAge[$arr_post.age]}<input type="hidden" name="age" value="{$arr_post.age}" ></td>
 								</tr>
+								*}
 								<tr>
 									<th scope="row">メールアドレス</th>
 									<td>{$arr_post.mail}<input type="hidden" name="mail" value="{$arr_post.mail}" ></td>

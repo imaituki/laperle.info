@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-16 14:14:17
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 19:02:50
          compiled from "./mail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13467651975dca0b9aa7a7c1-09775585%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '140ed6d1ad3b6643e3b58b9fe629cd46e8b9926b' => 
     array (
       0 => './mail.tpl',
-      1 => 1576473228,
+      1 => 1579255369,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'arr_post' => 0,
-    'OptionAge' => 0,
     'OptionSex' => 0,
     'OptionTime' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5dca0b9aab48f6_65178550')) {function content_5dca0b9aab48f6_65178550($_smarty_tpl) {?>--------------------------------------------------------
+<?php if ($_valid && !is_callable('content_5dca0b9aab48f6_65178550')) {function content_5dca0b9aab48f6_65178550($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/laperle/data/smarty/libs/plugins/modifier.date_format.php';
+?>--------------------------------------------------------
 ■ ご予約内容
 --------------------------------------------------------
 [お名前]
@@ -37,8 +37,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['ruby'])===null||$tmp==='' ? '' : $tmp);?>
 
 
-[年齢]
-<?php echo $_smarty_tpl->tpl_vars['OptionAge']->value[$_smarty_tpl->tpl_vars['arr_post']->value['age']];?>
+[生年月日]
+<?php echo smarty_modifier_date_format(implode($_smarty_tpl->tpl_vars['arr_post']->value['birthday'],"-"),"%Y年%m月%d日");?>
 
 
 [メール]
