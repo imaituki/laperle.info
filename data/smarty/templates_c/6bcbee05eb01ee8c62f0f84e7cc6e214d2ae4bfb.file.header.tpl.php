@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-18 10:13:26
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-20 13:07:05
          compiled from "/home/laperle/www//common/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14172287435ddb273431dd08-77240625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6bcbee05eb01ee8c62f0f84e7cc6e214d2ae4bfb' => 
     array (
       0 => '/home/laperle/www//common/include/header.tpl',
-      1 => 1576631601,
+      1 => 1579493221,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5ddb273431f326_04094091',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ddb273431f326_04094091')) {function content_5ddb273431f326_04094091($_smarty_tpl) {?><div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
+<?php if ($_valid && !is_callable('content_5ddb273431f326_04094091')) {function content_5ddb273431f326_04094091($_smarty_tpl) {?>
 <header>
 <div id="head">
 	<div class="head_wrap center">
-		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
+		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></a></div>
 		<div id="head_navi">
 			<nav>
 				<div class="main">
@@ -53,5 +52,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</div>
 	<div id="side_contact" class="mincho"><a href="/#contact"><i class="fa fa-envelope"></i><br>ご予約</a></div>
 </div>
-</header>
-<?php }} ?>
+</header><?php }} ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 10:18:50
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-20 13:23:07
          compiled from "./detail.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16079345195dc912400ee812-37862559%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8f2188843651849d229ec72d945b4ebcb639e332' => 
     array (
       0 => './detail.tpl',
-      1 => 1575602959,
+      1 => 1579494141,
       2 => 'file',
     ),
   ),
@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<section class="bg_1 pos_re">
-		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="フェイシャルレメディサロン ~la perle~"></div>
+		<div class="pos_ab tp_0"><img src="/common/image/contents/top/deco_h.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		<div class="center3">
 			<div id="pankuzu">
 				<ul>
@@ -118,7 +118,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php }?>" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン ~la perle~"></div>
+		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 	</section>
 </div>
 </main>

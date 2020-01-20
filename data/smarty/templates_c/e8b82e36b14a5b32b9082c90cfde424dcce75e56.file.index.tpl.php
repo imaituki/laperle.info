@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2020-01-17 18:50:39
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-20 13:13:16
          compiled from "./index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1856378865dccf1764d4590-07011526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e8b82e36b14a5b32b9082c90cfde424dcce75e56' => 
     array (
       0 => './index.tpl',
-      1 => 1579254638,
+      1 => 1579493571,
       2 => 'file',
     ),
   ),
@@ -57,24 +57,24 @@ if (!is_callable('smarty_function_html_options')) include '/home/laperle/data/sm
 <div id="top_unit">
 	<div id="main_image">
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-1.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-1.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-2.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-2.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-3.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-3.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-4.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-4.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		</div>
 		<div class="unit">
-			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
-			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン ~la perle~"></div>
+			<div class="sp_none img_back"><img src="/common/image/contents/top/main_img-5.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+			<div class="pc_none img_back"><img src="/common/image/contents/top/sp_main_img-5.jpg" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 		</div>
 	</div>
 	<div id="main_image_text">
@@ -123,8 +123,8 @@ if (!is_callable('smarty_function_html_options')) include '/home/laperle/data/sm
 					<div class="col-xs-8 col-xs-pull-4 height-1 disp_tb">
 						<div class="disp_tc">
 							<h3 class="mb20">岡山唯一のフェイシャルレメディスト　松井しおり</h3>
-							<p class="mb20">大学を卒業後、全国展開の大手エステサロンに就職、過去、月300万円の売り上げが最高だと言われた薄利多売の脱毛部門の経営モデルの中、月600万円をたった一人で売り上げた、全国１位の売り上げ実績と、会社で過去最高の金額を打ち出した記録を持つエステティシャンである。</p>
-							<p class="mb20">幼い頃、全てのことに納得しないと出来ない性格であったと自覚する反面、社会人に成長するにつれ、気づけば自分の行動言動が人の顔色や、他人からの評価、を気にすることで心身のダメージを受けるように…。<br>これがストレスだとさえ気づかなかった状態。体調不良もこれが原因だとわからず、その後、心身とも辛い時期を過ごした経験もつ。</p>
+							<p class="mb20">大学を卒業後、全国展開の大手エステサロンに就職、過去、月300万円の売り上げが最高だと言われた薄利多売の脱毛部門の経営モデルの中、月600万円をたった一人で売り上げた、全国1位の売り上げ実績と、会社で過去最高の金額を打ち出した記録を持つエステティシャンである。</p>
+							<p class="mb20">幼い頃、全てのことに納得しないと出来ない性格であったと自覚する反面、社会人に成長するにつれ、気づけば自分の行動言動が人の顔色や、他人からの評価、を気にすることで心身のダメージを受けるように…。<br>これがストレスだとさえ気づかなかった状態。体調不良もこれが原因だとわからず、その後、心身とも辛い時期を過ごした経験をもつ。</p>
 							<p class="mb20">そんな時にフェイシャルレメディ&reg;︎と出会い、学び習得することでようやく変わることができたと実感。家族の原因不明であった不調和も自身の施術で改善を目の当たりにする。<br>ストレスのスイッチを克服し、自分らしさを取り戻し、心身健康でいられることがどれほど、生きやすいのかということを実感し、自分や家族の不調を変えることができた経験を元に地元、岡山にサロンを独立開業。<br>今や多くのクライアントの、『心の安定』そこがベースである、という自身の考えから、健康や美容をフェイシャルレメディストとして提唱している。</p>
 							<p class="mb30">フェイシャルレメディ&reg;︎の創始者、岩崎るみ氏より、直々の指導を受けている認定セラピストでもあり、今もなお、自分と顧客の為にもさらに知識や技術を掘り下げ追求するために、遠方までレッスンに通っている。</p>
 						</div>
@@ -257,7 +257,7 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 							<p class="mincho pay">￥20,000</p>
 						</div>
 						<div class="flex mb50">
-							<p class="tag">一か月以内の次回予約</p>
+							<p class="tag">1か月以内の次回予約</p>
 							<p class="mincho pay">￥18,000</p>
 						</div>
 						<h5 class="mb20">キャンセル料金</h5>
@@ -430,7 +430,7 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 										<td>
 											<?php if ((($tmp = @$_smarty_tpl->tpl_vars['message']->value['ng']['birthday'])===null||$tmp==='' ? '' : $tmp)!=null) {?><p class="error"><?php echo $_smarty_tpl->tpl_vars['message']->value['ng']['birthday'];?>
 </p><?php }?>
-											<?php echo smarty_function_html_select_date2(array('field_array'=>'birthday','field_order'=>'ymd','order_format'=>"%Y年 %M月 %D日",'prefix'=>'','year_empty'=>"--",'month_empty'=>"--",'day_empty'=>"--",'end_year'=>"-100",'month_format'=>"%m",'time'=>(($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['birthday'])===null||$tmp==='' ? "0000-00-00" : $tmp),'reverse_years'=>true),$_smarty_tpl);?>
+											<?php echo smarty_function_html_select_date2(array('field_array'=>'birthday','field_order'=>'ymd','order_format'=>"%Y年 %M月 %D日",'prefix'=>'','year_empty'=>"--",'month_empty'=>"--",'day_empty'=>"--",'start_year'=>"-10",'end_year'=>"-90",'month_format'=>"%m",'time'=>(($tmp = @$_smarty_tpl->tpl_vars['arr_post']->value['birthday'])===null||$tmp==='' ? "0000-00-00" : $tmp),'reverse_years'=>true),$_smarty_tpl);?>
 
 										</td>
 									</tr>
@@ -559,25 +559,18 @@ if (!$_smarty_tpl->tpl_vars["information"]->_loop) {
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
 <script>
-	
-	$(function() {
-	$(".datepicker").datepicker(
-		{
-			dateFormat: 'yy年mm月dd日',
-			minDate: "+1d",
-			showButtonPanel: true,
-			closeText: '選択解除',
-			onClose: function () {
+$(function(){
+	$(".datepicker").datepicker({
+		dateFormat: 'yy年mm月dd日',
+		minDate: "+1d",
+		showButtonPanel: true,
+		closeText: '選択解除',
+		onClose: function (){
 			var event = arguments.callee.caller.caller.arguments[0];
-				if ($(event.delegateTarget).hasClass('ui-datepicker-close')) {
-					$(this).val('');
-				}
-			}
-
+			if ($(event.delegateTarget).hasClass('ui-datepicker-close')) { $(this).val(''); }
 		}
-	);
 	});
-	
+});
 </script>
 </body>
 </html>

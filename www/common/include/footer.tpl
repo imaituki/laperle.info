@@ -1,7 +1,7 @@
 <footer>
 <div id="foot">
 	<div class="foot_wrap center">
-		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
+		<div class="mb10 logo"><a class="ov" href="/"><img src="/common/image/foot/logo.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></a></div>
 		<div class="foot_navi">
 			<ul>
 				<li><a href="/#about">フェイシャルレメディ&reg;とは</a></li>
@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 	</div>
-	<div id="copyright">&copy; 2019 La Perle </div>
+	<div id="copyright">&copy; 2019 La Perle（ラペルル）</div>
 </div>
 <div id="pagetop"><a href="javascript:void(0);"><span>↑</span></a></div>
 </footer>

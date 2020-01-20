@@ -10,6 +10,12 @@
 //----------------------------------------
 require "./config.ini";
 
+
+//----------------------------------------
+// SESSION受け取り
+//----------------------------------------
+$arr_post = $_SESSION["front"]["contact"]["POST"];
+
 //----------------------------------------
 //  ヘッダー情報
 //----------------------------------------
@@ -28,8 +34,11 @@ $_HTML_HEADER["description"] = "";
 $smarty = new MySmarty("front");
 $smarty->compile_dir .= "";
 
+// テンプレートに設定
+$smarty->assign( "message"  , $message   );
+$smarty->assign( "arr_post" , $arr_post  );
+
 // 表示
 $smarty->display("finish.tpl");
-
 
 ?>

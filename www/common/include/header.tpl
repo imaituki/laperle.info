@@ -1,9 +1,9 @@
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
+{*<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>*}
 <header>
 <div id="head">
 	<div class="head_wrap center">
-		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン ~la perle~"></a></div>
+		<div class="site_logo"><a class="ov" href="/"><img src="/common/image/head/logo.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></a></div>
 		<div id="head_navi">
 			<nav>
 				<div class="main">

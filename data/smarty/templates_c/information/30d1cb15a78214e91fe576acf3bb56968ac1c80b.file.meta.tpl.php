@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2019-12-13 17:22:15
+<?php /* Smarty version Smarty-3.1.18, created on 2020-01-20 13:15:47
          compiled from "/home/laperle/www//common/include/meta.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16465049505ddcf98f3e27d8-52222300%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '30d1cb15a78214e91fe576acf3bb56968ac1c80b' => 
     array (
       0 => '/home/laperle/www//common/include/meta.tpl',
-      1 => 1575602678,
+      1 => 1579493171,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php } else { ?><?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
  | <?php }?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
 <?php }?></title>
-
 <meta name="keywords" content="<?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['keyword'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['keyword'])===null||$tmp==='' ? '' : $tmp);?>
 <?php } else { ?><?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['keyword'])===null||$tmp==='' ? '' : $tmp)) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['keyword'])===null||$tmp==='' ? '' : $tmp);?>
 ,<?php }?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['keyword'])===null||$tmp==='' ? '' : $tmp);?>
@@ -38,12 +37,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php } else { ?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php }?>">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, viewport-fit=cover">
-<link rel="icon" href="/common/favicon/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/common/favicon/favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="apple-touch-icon" href="/common/favicon/apple-touch-icon.png">
-
 <meta property="og:title" content="<?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['title'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_ORIGINAL']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
 <?php } else { ?><?php if ((($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp)!=null) {?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
  | <?php }?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
@@ -54,5 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php } else { ?><?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php echo (($tmp = @$_smarty_tpl->tpl_vars['_HTML_HEADER_DEFAULT']->value['description'])===null||$tmp==='' ? '' : $tmp);?>
 <?php }?>">
-<meta name="apple-mobile-web-app-title" content=" フェイシャルレメディサロン ~la perle~" />
-<?php }} ?>
+<meta name="apple-mobile-web-app-title" content="la perle">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="/common/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/common/favicon/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="/common/favicon/apple-touch-icon.png"><?php }} ?>
