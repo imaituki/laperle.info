@@ -456,7 +456,8 @@
 										<th scope="row" class="pos_vt">その他連絡事項</th>
 										<td>
 											{if !empty($message.ng.comment2)}<span class="error">※{$message.ng.comment2}</span>{/if}
-											<textarea rows="5" name="comment2" class="mb30">{$arr_post.comment2}</textarea>
+											<textarea rows="5" name="comment2">{$arr_post.comment2}</textarea>
+											<p class="mb30">InstagramからHPを閲覧された方は、よろしければご自分のアカウント名をお知らせください。</p>
 											<p class="pos_ar"><span class="c_red">*</span>は必須項目</p>
 										</td>
 									</tr>
