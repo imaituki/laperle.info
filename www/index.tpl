@@ -446,6 +446,13 @@
 										</td>
 									</tr>
 									<tr>
+										<th scope="row"><span class="c_red">*</span>ご予約当日の交通手段</th>
+										<td>
+											{if !empty($message.ng.way)}<span class="error">※{$message.ng.way}</span>{/if}
+											<input type="text" name="way" value="{$arr_post.way}">
+										</td>
+									</tr>
+									<tr>
 										<th scope="row" class="pos_vt">肌やお顔、体の悩み</th>
 										<td>
 											{if !empty($message.ng.comment1)}<span class="error">※{$message.ng.comment1}</span>{/if}

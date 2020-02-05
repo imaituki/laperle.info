@@ -79,7 +79,7 @@ class FT_contact {
 		// チェックエントリー
 		$objInputCheck->entryData( "お名前", "name", $arrVal["name"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "フリガナ", "ruby", $arrVal["ruby"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_KANA" ), 0, 255 );
-		// $objInputCheck->entryData( "年齢", "age", $arrVal["age"], array( "CHECK_EMPTY_ZERO"), null, null );
+		$objInputCheck->entryData( "ご予約当日の交通手段", "way", $arrVal["way"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN" ), 0, 255 );
 		$objInputCheck->entryData( "生年月日", "birthday", implode( "-", $arrVal["birthday"] ), array( "CHECK_EMPTY", "CHECK_DATE" ), null, null );
 		$objInputCheck->entryData( "メールアドレス", "mail", $arrVal["mail"], array( "CHECK_EMPTY", "CHECK_MIN_MAX_LEN", "CHECK_MAIL" ), 0, 255 );
 		$objInputCheck->entryData( "性別", "sex", $arrVal["sex"], array( "CHECK_EMPTY_ZERO"), null, null );

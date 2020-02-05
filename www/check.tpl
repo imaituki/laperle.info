@@ -97,6 +97,10 @@
 										<input type="hidden" name="time3" value="{$arr_post.time3}" >
 									</td>
 								</tr>
+								<tr>
+									<th scope="row">ご予約当日の交通手段</th>
+									<td>{$arr_post.way}<input type="hidden" name="way" value="{$arr_post.way}" ></td>
+								</tr>
 								<tr class="last">
 									<th scope="row" style="vertical-align: unset;">肌やお顔、体の悩み</th>
 									<td>{$arr_post.comment1|nl2br|default:"--"}<input type="hidden" name="comment1" value="{$arr_post.comment1}" ></td>

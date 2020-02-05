@@ -32,6 +32,8 @@
 [予約希望日時(第三希望)]
 {$arr_post.date3|default:"--"}{if $arr_post.time3}　{$OptionTime[$arr_post.time3]}{/if}
 
+[ご予約当日の交通手段]
+{$arr_post.way|default:""}
 
 [肌やお顔、体の悩み]
 {$arr_post.comment1|default:"--"}
