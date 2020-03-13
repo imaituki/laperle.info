@@ -259,7 +259,7 @@
 #information_detail .button._more{position: relative; z-index: 10;}
 #information_detail .button._more{position: relative; z-index: 10;}
 #information_detail .information img, #information_detail .information .img_rect{border-radius: 20px;}
-
+#information_detail .r0{right: 0;}
 @media (max-width: 767px){
 	#information_detail .information h2{margin-bottom: 5px;}
 }

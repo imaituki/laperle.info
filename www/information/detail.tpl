@@ -65,7 +65,7 @@
 				<div class="pos_ac"><a href="/information/{if $arr_get.page != NULL}?page={$arr_get.page}{/if}" class="button _more">新着情報一覧に戻る<i class="fas fa-angle-right"></i></a></div>
 			</div>
 		</div>
-		<div class="pos_ab bt_0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
+		<div class="pos_ab bt_0 r0"><img src="/common/image/contents/top/deco_f.png" alt="フェイシャルレメディサロン la perle（ラペルル）"></div>
 	</section>
 </div>
 </main>
